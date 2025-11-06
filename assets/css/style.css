@@ -776,7 +776,7 @@ span#main {
   background: var(--secondary-color);
   right: 55px;
   bottom: -32px;
-  z-index: 111;
+  z-index: 1;
 }
 
 .about-shape1 {

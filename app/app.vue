@@ -1,9 +1,11 @@
 <template>
   <div>
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 
 <script setup>
-// Global app setup
+// AOS is initialized by the client plugin `~/plugins/aos.client.ts`.
 </script>

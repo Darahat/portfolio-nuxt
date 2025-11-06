@@ -36,17 +36,26 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { nextTick, onMounted, ref } from "vue";
 import { useScripts } from "~/composables/useScripts";
 
 const loading = ref(true);
 const { initializePlugins } = useScripts();
 
-onMounted(() => {
+onMounted(async () => {
   // Hide preloader after mount
   setTimeout(() => {
     loading.value = false;
-  }, 1000);
-  initializePlugins();
+  }, 500);
+
+  // Wait for DOM to be ready
+  await nextTick();
+
+  // Initialize plugins after a short delay
+  setTimeout(() => {
+    initializePlugins();
+
+    // AOS is refreshed automatically by the client plugin on route changes.
+  }, 600);
 });
 </script>

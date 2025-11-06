@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   pages: true,
   components: ["~/components"],
 
-  plugins: ["~/plugins/seo-schema.ts"],
+  plugins: ["~/plugins/seo-schema.ts", "~/plugins/aos.client.ts"],
 
   css: [
     "~/assets/css/bootstrap.min.css",
@@ -52,7 +52,8 @@ export default defineNuxtConfig({
           tagPosition: "bodyClose",
           defer: true,
         },
-        { src: "/js/aos.js", tagPosition: "bodyClose", defer: true },
+        // AOS is now loaded via NPM package, not from public/js/aos.js
+        // { src: "/js/aos.js", tagPosition: "bodyClose", defer: true },
         { src: "/js/main.js", tagPosition: "bodyClose", defer: true },
       ],
     },
