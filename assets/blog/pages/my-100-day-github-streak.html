@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      My 100-Day GitHub Streak: How I Reinvented Myself for Remote Work -
+      Didarul Alam Rahat
+    </title>
+    <meta
+      name="description"
+      content="After 100 days of daily GitHub contributions (495 commits, 32 PRs, 17 issues), I reinvented my stack to become remote-ready: focusing on open-source, DevOps, testing, and modern frameworks. Lessons on consistency, learning through contribution, and preparing for remote work."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Didarul Alam Rahat" />
+    <meta
+      name="keywords"
+      content="100-day GitHub streak, 100daysofcode, career reinvention, open source, remote work, GitHub streak, Didarul Alam Rahat, fullstack development, Flutter, Laravel, Vue.js"
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://medium.com/@darahat42/my-100-day-github-streak-how-i-reinvented-myself-for-remote-work-87aa6cd55c87"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="My 100-Day GitHub Streak: How I Reinvented Myself for Remote Work"
+    />
+    <meta
+      property="og:description"
+      content="After 100 days of consistent GitHub contributions I refocused my skills—embracing open source, improving DevOps and testing, and building modern projects to prepare for remote roles."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://medium.com/@darahat42/my-100-day-github-streak-how-i-reinvented-myself-for-remote-work-87aa6cd55c87"
+    />
+    <meta
+      property="og:image"
+      content="https://darahat.dev/assets/og-images/100-day-github-streak.webp"
+    />
+
+    <!-- Article metadata -->
+    <meta property="article:published_time" content="2025-09-06T00:00:00Z" />
+    <meta property="article:author" content="https://medium.com/@darahat42" />
+    <meta property="article:tag" content="Career Reinvention" />
+    <meta property="article:tag" content="100daysofcode" />
+    <meta property="article:tag" content="Open Source" />
+    <meta property="article:tag" content="Remote Work" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@darahat42" />
+    <meta name="twitter:creator" content="@darahat42" />
+    <meta
+      name="twitter:title"
+      content="My 100-Day GitHub Streak: How I Reinvented Myself for Remote Work"
+    />
+    <meta
+      name="twitter:description"
+      content="495 commits, 32 PRs, 17 issues — 100 days of consistent contributions that helped me level up my stack and get remote-ready. Lessons on discipline, open source, and practical learning."
+    />
+    <meta
+      name="twitter:image"
+      content="https://darahat.dev/assets/og-images/100-day-github-streak.webp"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../images/logo/favicon.webp"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    /> -->
+    <style>
+      /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"); */
+
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+      }
+
+      .prose {
+        max-width: 65ch;
+      }
+
+      .prose h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .prose p {
+        margin-bottom: 1.5rem;
+        font-size: 1.125rem;
+        color: #374151;
+      }
+
+      .prose img {
+        border-radius: 0.5rem;
+        margin: 2rem 0;
+      }
+
+      .prose a {
+        color: #3b82f6;
+        text-decoration: underline;
+      }
+
+      .prose a:hover {
+        color: #2563eb;
+      }
+
+      .prose ul,
+      .prose ol {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+      }
+
+      .prose li {
+        margin-bottom: 0.5rem;
+      }
+
+      .prose blockquote {
+        border-left: 4px solid #e5e7eb;
+        padding-left: 1rem;
+        color: #4b5563;
+        font-style: italic;
+        margin: 1.5rem 0;
+      }
+
+      .prose pre {
+        background-color: #f3f4f6;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        overflow-x: auto;
+        margin: 1.5rem 0;
+      }
+
+      .prose code {
+        background-color: #f3f4f6;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.25rem;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="container mx-auto px-4 py-6">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="../../index.html" class="text-xl font-bold text-gray-900"
+              >Didarul Alam Rahat</a
+            >
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="../../index.html" class="text-gray-600 hover:text-blue-600"
+              >Home</a
+            >
+            <a
+              href="../../index.html#about"
+              class="text-gray-600 hover:text-blue-600"
+              >About</a
+            >
+            <a
+              href="../../index.html#work"
+              class="text-gray-600 hover:text-blue-600"
+              >Works</a
+            >
+            <a
+              href="../../index.html#service"
+              class="text-gray-600 hover:text-blue-600"
+              >Services</a
+            >
+            <a
+              href="../../index.html#contact"
+              class="text-gray-600 hover:text-blue-600"
+              >Contact</a
+            >
+            <a href="../blog.html" class="text-blue-600 font-medium">Blog</a>
+          </nav>
+          <div class="md:hidden">
+            <button class="text-gray-600 focus:outline-none">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-8">
+          <span class="text-blue-600 font-medium">Development</span>
+          <h1 class="text-4xl md:text-5xl font-bold mt-2 mb-4">
+            My 100-Day GitHub Streak: How I Reinvented Myself for Remote Work
+          </h1>
+          <div class="flex items-center mt-6">
+            <img
+              src="../../images/author.webp"
+              alt="Didarul Alam Rahat"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-4">
+              <p class="font-medium">Didarul Alam Rahat</p>
+              <p class="text-gray-500 text-sm">Sep 6, 2025 · 3 min read</p>
+            </div>
+          </div>
+        </div>
+
+        <article class="prose mx-auto">
+          <img
+            src="../../images/blog/blog-img3.webp"
+            alt="100-day GitHub streak"
+            class="w-full rounded-lg"
+          />
+
+          <p>
+            Consistency changes everything. I completed a 100-day GitHub streak
+            — 495 commits, 32 pull requests, and 17 issues across open-source
+            repositories. That streak wasn't just about numbers; it was the
+            first milestone in a deliberate journey to reinvent my skills and
+            become remote-ready.
+          </p>
+
+          <h2>🌱 My Background Story: Where It All Began</h2>
+
+          <p>
+            I started my tech career in 2018 and initially specialized in
+            Vue.js. Later, I explored Flutter in 2019, building apps that
+            reached thousands of users. While I gained front-end and backend
+            experience (including PHP/CodeIgniter), I began to feel the need to
+            modernize my toolkit — especially around DevOps, testing, and clean
+            architecture.
+          </p>
+
+          <p>
+            On May 19, 2025 I created an 8-month self-development roadmap. The
+            100-day streak was the first tangible checkpoint: a daily practice
+            that forced me to ship, learn, and document consistently.
+          </p>
+
+          <h2>What I Built in 100 Days</h2>
+
+          <p>
+            I focused on open-source projects that pushed me into new stacks and
+            real-world problems:
+          </p>
+
+          <ul>
+            <li>
+              <strong>StakeHive (DeFi App)</strong> — Laravel Blade, Vue.js,
+              Solidity
+            </li>
+            <li>
+              <strong>OpsMate (Flutter + AI)</strong> — a task manager that
+              summarizes updates with Mistral AI
+            </li>
+            <li>
+              <strong>Starter Kits</strong> — Flutter + Laravel templates with
+              auth, AI chat and form-builder integrations
+            </li>
+          </ul>
+
+          <h2>Lessons Learned</h2>
+
+          <ol>
+            <li>
+              <strong>Consistency &gt; Motivation</strong> — daily discipline
+              wins over intermittent bursts of energy.
+            </li>
+            <li>
+              <strong>Open Source = Real Learning</strong> — contributing
+              teaches problem-solving and collaboration in ways tutorials don't.
+            </li>
+            <li>
+              <strong>Self-Reflection Matters</strong> — identifying gaps
+              (DevOps, testing, docs) gave me a focused plan.
+            </li>
+            <li>
+              <strong>Remote-readiness is a skill</strong> — cloud deployment,
+              documentation, and reproducible setups matter.
+            </li>
+          </ol>
+
+          <h2>🌍 Looking Ahead</h2>
+
+          <p>
+            This streak is only the beginning. Next I plan to finish my
+            AI-powered Flutter Form Builder, expand the starter kits, contribute
+            more to open-source, and continue applying for remote full-stack
+            roles.
+          </p>
+
+          <h2>🙌 Closing Thoughts</h2>
+
+          <p>
+            The 100 days weren't always easy. Some days I lacked motivation —
+            but showing up and shipping tiny improvements added up. If you're
+            stuck with old tools or unsure where to start, small, consistent
+            actions will move the needle.
+          </p>
+
+          <p>
+            Follow my work on
+            <a href="https://github.com/darahat">GitHub</a>, visit my
+            <a href="https://darahat.dev/">portfolio</a>, or connect on
+            <a href="https://www.linkedin.com/in/darahat">LinkedIn</a>.
+          </p>
+        </article>
+
+        <div class="mt-12 pt-8 border-t border-gray-200">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+              <button
+                class="p-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+              >
+                <i class="fas fa-heart"></i>
+              </button>
+              <span class="text-gray-600">42 likes</span>
+            </div>
+            <div class="flex items-center space-x-4">
+              <button
+                class="p-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+              >
+                <i class="fas fa-share"></i>
+              </button>
+              <button
+                class="p-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+              >
+                <i class="fas fa-bookmark"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <h3 class="text-xl font-semibold mb-4">
+              More from Didarul Alam Rahat
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div
+                class="border rounded-lg p-4 hover:shadow-md transition-shadow"
+              >
+                <a href="the-power-of-vuejs.html" class="block">
+                  <img
+                    src="../../images/blog/blog-img1.webp"
+                    alt="The Power of Vue.js"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h4 class="text-lg font-semibold mb-2">
+                    The Power of Vue.js
+                  </h4>
+                  <p class="text-gray-600 mb-2">
+                    Exploring the progressive JavaScript framework that's taking
+                    the web by storm.
+                  </p>
+                  <span class="text-sm text-gray-500">Oct 18, 2025</span>
+                </a>
+              </div>
+              <div
+                class="border rounded-lg p-4 hover:shadow-md transition-shadow"
+              >
+                <a href="getting-started-with-laravel.html" class="block">
+                  <img
+                    src="../../images/blog/blog-img2.webp"
+                    alt="Getting Started with Laravel"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h4 class="text-lg font-semibold mb-2">
+                    Getting Started with Laravel
+                  </h4>
+                  <p class="text-gray-600 mb-2">
+                    A beginner's guide to the PHP framework for web artisans.
+                  </p>
+                  <span class="text-sm text-gray-500">Oct 20, 2025</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12">
+      <div class="container mx-auto px-4 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <a href="../../index.html" class="text-xl font-bold text-gray-900"
+              >Didarul Alam Rahat</a
+            >
+            <p class="text-gray-600 mt-2">
+              Freelance Full-Stack & Flutter Developer
+            </p>
+          </div>
+          <div class="flex space-x-6">
+            <a
+              href="https://twitter.com/darahat42"
+              class="text-gray-600 hover:text-blue-600"
+            >
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/didarulalamrahat"
+              class="text-gray-600 hover:text-blue-600"
+            >
+              <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+            <a
+              href="https://github.com/darahat"
+              class="text-gray-600 hover:text-blue-600"
+            >
+              <i class="fab fa-github text-xl"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-500 text-sm"
+        >
+          <p>© 2025 Didarul Alam Rahat. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Simple mobile menu toggle
+      document
+        .querySelector(".md\\:hidden button")
+        .addEventListener("click", function () {
+          // You would implement mobile menu toggle functionality here
+          console.log("Mobile menu toggled");
+        });
+    </script>
+  </body>
+</html>
