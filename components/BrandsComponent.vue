@@ -58,12 +58,36 @@ import { ref } from "vue";
 import "swiper/css";
 
 const brands = ref([
-  { name: "RUBI", image: "/images/brand/brand-img1.webp" },
-  { name: "Zyco", image: "/images/brand/brand-img2.webp" },
-  { name: "BAU", image: "/images/brand/brand-img3.webp" },
-  { name: "Funush", image: "/images/brand/brand-img4.webp" },
-  { name: "OTC", image: "/images/brand/brand-img5.webp" },
-  { name: "Network Tap", image: "/images/brand/brand-img6.webp" },
+  {
+    name: "RUBI",
+    url: "https://www.rubi.com/en",
+    image: "/images/brand/brand-img1.webp",
+  },
+  {
+    name: "Zyco",
+    url: "https://zyco.co/",
+    image: "/images/brand/brand-img2.webp",
+  },
+  {
+    name: "BAU",
+    url: "https://bau.edu.bd",
+    image: "/images/brand/brand-img3.webp",
+  },
+  {
+    name: "Funush",
+    url: "https://www.funush.com/",
+    image: "/images/brand/brand-img4.webp",
+  },
+  {
+    name: "Otcantipiojos",
+    url: "https://otcantipiojos.es/",
+    image: "/images/brand/brand-img5.webp",
+  },
+  {
+    name: "Network Tap",
+    url: "https://otcantipiojos.es/",
+    image: "/images/brand/brand-img6.webp",
+  },
   { name: "ELP", image: "/images/brand/brand-img7.webp" },
 ]);
 </script>
