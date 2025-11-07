@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>The Power of Vue.js - Didarul Alam Rahat</title>
+    <meta
+      name="description"
+      content="Exploring the progressive JavaScript framework that's taking the web by storm."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../../images/logo/favicon.webp"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    /> -->
+    <style>
+      /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"); */
+
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+      }
+
+      .prose {
+        max-width: 65ch;
+      }
+
+      .prose h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .prose p {
+        margin-bottom: 1.5rem;
+        font-size: 1.125rem;
+        color: #374151;
+      }
+
+      .prose img {
+        border-radius: 0.5rem;
+        margin: 2rem 0;
+      }
+
+      .prose a {
+        color: #3b82f6;
+        text-decoration: underline;
+      }
+
+      .prose a:hover {
+        color: #2563eb;
+      }
+
+      .prose ul,
+      .prose ol {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+      }
+
+      .prose li {
+        margin-bottom: 0.5rem;
+      }
+
+      .prose blockquote {
+        border-left: 4px solid #e5e7eb;
+        padding-left: 1rem;
+        color: #4b5563;
+        font-style: italic;
+        margin: 1.5rem 0;
+      }
+
+      .prose pre {
+        background-color: #f3f4f6;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        overflow-x: auto;
+        margin: 1.5rem 0;
+      }
+
+      .prose code {
+        background-color: #f3f4f6;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.25rem;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="container mx-auto px-4 py-6">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="../../index.html" class="text-xl font-bold text-gray-900"
+              >Didarul Alam Rahat</a
+            >
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="../../index.html" class="text-gray-600 hover:text-blue-600"
+              >Home</a
+            >
+            <a
+              href="../../index.html#about"
+              class="text-gray-600 hover:text-blue-600"
+              >About</a
+            >
+            <a
+              href="../../index.html#work"
+              class="text-gray-600 hover:text-blue-600"
+              >Works</a
+            >
+            <a
+              href="../../index.html#service"
+              class="text-gray-600 hover:text-blue-600"
+              >Services</a
+            >
+            <a
+              href="../../index.html#contact"
+              class="text-gray-600 hover:text-blue-600"
+              >Contact</a
+            >
+            <a href="../blog.html" class="text-blue-600 font-medium">Blog</a>
+          </nav>
+          <div class="md:hidden">
+            <button class="text-gray-600 focus:outline-none">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-8">
+          <span class="text-blue-600 font-medium">Development</span>
+          <h1 class="text-4xl md:text-5xl font-bold mt-2 mb-4">
+            The Power of Vue.js
+          </h1>
+          <div class="flex items-center mt-6">
+            <img
+              src="../../images/author.webp"
+              alt="Didarul Alam Rahat"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-4">
+              <p class="font-medium">Didarul Alam Rahat</p>
+              <p class="text-gray-500 text-sm">Oct 18, 2025 · 5 min read</p>
+            </div>
+          </div>
+        </div>
+
+        <article class="prose mx-auto">
+          <img
+            src="../../images/blog/blog-img1.webp"
+            alt="The Power of Vue.js"
+            class="w-full rounded-lg"
+          />
+
+          <p>
+            Vue.js is a progressive JavaScript framework used to build user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. In this post, we'll explore the key features of Vue.js and why it has become so popular among developers.
+          </p>
+
+          <h2>What is Vue.js?</h2>
+
+          <p>
+            Vue.js is a free, open-source Model-view-viewmodel (MVVM) front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members.
+          </p>
+
+          <h2>Why Choose Vue.js?</h2>
+
+          <p>
+            There are many reasons to choose Vue.js for your next project. Here
+            are a few:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Approachable:</strong> Already know HTML, CSS and JavaScript? Read the guide and start building things in no time!
+            </li>
+            <li>
+              <strong>Versatile:</strong> An incrementally adoptable ecosystem that scales between a library and a full-featured framework.
+            </li>
+            <li>
+              <strong>Performant:</strong> 20KB min+gzip Runtime, Blazing Fast Virtual DOM, Minimal Optimization Efforts.
+            </li>
+          </ul>
+
+          <h2>Getting Started with Vue.js</h2>
+
+          <p>
+            To get started with Vue.js, you can use the Vue CLI to create a new
+            project:
+          </p>
+
+          <pre><code class="language-bash">npm init vue@latest</code></pre>
+
+          <p>
+            Once the project is created, you can start the local development
+            server using the following command:
+          </p>
+
+          <pre><code class="language-bash">npm run dev</code></pre>
+
+          <h2>Conclusion</h2>
+
+          <p>
+            Vue.js is a powerful and flexible framework that can help you build
+            modern web applications quickly and efficiently. Its gentle learning
+            curve and excellent documentation make it a great choice for both
+            beginners and experienced developers.
+          </p>
+        </article>
+
+        <div class="mt-12 pt-8 border-t border-gray-200">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+              <button
+                class="p-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+              >
+                <i class="fas fa-heart"></i>
+              </button>
+              <span class="text-gray-600">42 likes</span>
+            </div>
+            <div class="flex items-center space-x-4">
+              <button
+                class="p-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+              >
+                <i class="fas fa-share"></i>
+              </button>
+              <button
+                class="p-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+              >
+                <i class="fas fa-bookmark"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <h3 class="text-xl font-semibold mb-4">
+              More from Didarul Alam Rahat
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div
+                class="border rounded-lg p-4 hover:shadow-md transition-shadow"
+              >
+                <a href="getting-started-with-laravel.html" class="block">
+                  <img
+                    src="../../images/blog/blog-img1.webp"
+                    alt="The Power of Vue.js"
+                    class="w-full rounded-lg"
+                  />
+                  <h4 class="text-lg font-semibold mb-2">
+                    Getting Started with Laravel
+                  </h4>
+                  <p class="text-gray-600 mb-2">
+                    A beginner's guide to the PHP framework for web artisans.
+                  </p>
+                  <span class="text-sm text-gray-500">Oct 20, 2025</span>
+                </a>
+              </div>
+              <div
+                class="border rounded-lg p-4 hover:shadow-md transition-shadow"
+              >
+                <a href="an-introduction-to-flutter.html" class="block">
+                  <img
+                    src="../../images/blog/port-img5-large.webp"
+                    alt="An Introduction to Flutter"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h4 class="text-lg font-semibold mb-2">
+                    An Introduction to Flutter
+                  </h4>
+                  <p class="text-gray-600 mb-2">
+                    Google's UI toolkit for building beautiful, natively
+                    compiled applications.
+                  </p>
+                  <span class="text-sm text-gray-500">Oct 22, 2025</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12">
+      <div class="container mx-auto px-4 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <a href="../../index.html" class="text-xl font-bold text-gray-900"
+              >Didarul Alam Rahat</a
+            >
+            <p class="text-gray-600 mt-2">
+              Freelance Full-Stack & Flutter Developer
+            </p>
+          </div>
+          <div class="flex space-x-6">
+            <a
+              href="https://twitter.com/darahat42"
+              class="text-gray-600 hover:text-blue-600"
+            >
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/didarulalamrahat"
+              class="text-gray-600 hover:text-blue-600"
+            >
+              <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+            <a
+              href="https://github.com/darahat"
+              class="text-gray-600 hover:text-blue-600"
+            >
+              <i class="fab fa-github text-xl"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-500 text-sm"
+        >
+          <p>© 2025 Didarul Alam Rahat. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Simple mobile menu toggle
+      document
+        .querySelector(".md\:hidden button")
+        .addEventListener("click", function () {
+          // You would implement mobile menu toggle functionality here
+          console.log("Mobile menu toggled");
+        });
+    </script>
+  </body>
+</html>

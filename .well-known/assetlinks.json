@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.aiformbuilder",
+      "sha256_cert_fingerprints": [
+        "b9:a7:84:f4:6a:f5:9e:4b:55:a9:81:33:e8:be:ba:cc:cd:c6:d9:29:c3:14:d7:e2:2c:78:a1:cd:e6:21:55:a7",
+        "bc:57:8f:98:72:f6:4e:5e:cb:77:f7:24:74:cc:62:a7:da:5d:7a:52:d8:b4:3e:37:e8:27:33:fe:f0:25:43:05"
+      ]
+    }
+  }
+]
