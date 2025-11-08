@@ -10,7 +10,7 @@
 
 # Environment variables (you can add more as needed)
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20.21.0"
 
 # Redirect rules (optional - for SPA fallback)
 [[redirects]]

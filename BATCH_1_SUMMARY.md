@@ -5,7 +5,6 @@
 ### New Components Created:
 
 1. **`partials/hero.html`** (90 lines)
-
    - Hero/Slider section with parallax shapes
    - Main heading and animated text
    - CTA buttons
@@ -96,7 +95,6 @@ If load time > 500ms, something may be wrong.
 ### Files Modified:
 
 1. `js/component-loader-test.js`
-
    - Added hero-component
    - Added intro-features-component
    - Now loads 5 components instead of 3
@@ -225,3 +223,7 @@ http://localhost:8000/index-test.html
 Then report: **PASS or FAIL?**
 
 Let's go! 🚀
+
+nvm use 20
+npm ci
+npm run build
