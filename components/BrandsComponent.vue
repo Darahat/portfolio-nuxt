@@ -51,8 +51,6 @@
 </template>
 
 <script setup>
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/vue";
 import { ref } from "vue";
 
 import "swiper/css";
@@ -85,9 +83,9 @@ const brands = ref([
   },
   {
     name: "Network Tap",
-    url: "https://otcantipiojos.es/",
+    url: "https://thenetworktap.com/",
     image: "/images/brand/brand-img6.webp",
   },
-  { name: "ELP", image: "/images/brand/brand-img7.webp" },
+  { name: "ELP", url: "#", image: "/images/brand/brand-img7.webp" },
 ]);
 </script>

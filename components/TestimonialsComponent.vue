@@ -107,13 +107,10 @@
     </div>
   </div>
 </template>
-
 <script setup>
 import { useHead } from "#imports";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/vue";
 import { testimonials } from "~/data/testimonials.js";
 import testimonialIcon from "/images/testimonial/testimonial-icon.webp";
 import testimonialsImg from "/images/testimonial/testimonials-img.webp";

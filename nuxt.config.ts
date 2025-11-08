@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   srcDir: ".",
   pages: true,
+  ssr: true,
   components: ["~/components"],
 
   plugins: ["~/plugins/seo-schema.ts", "~/plugins/aos.client.ts"],

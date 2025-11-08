@@ -174,31 +174,6 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
-
-onMounted(() => {
-  if (import.meta.client && window.$ && window.$.fn.knob) {
-    $(".knob").knob({
-      draw: function () {
-        $(this.i).val(this.cv + "%");
-      },
-    });
-
-    if (window.$.fn.appear) {
-      $(".knob").appear(function () {
-        const el = $(this);
-        const dataRel = el.attr("data-rel");
-        el.animate(
-          { value: dataRel },
-          {
-            duration: 2000,
-            step: function () {
-              el.val(Math.ceil(this.value)).trigger("change");
-            },
-          }
-        );
-      });
-    }
-  }
-});
+import { useSkills } from "~/composables/useSkills";
+useSkills();
 </script>
