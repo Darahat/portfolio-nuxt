@@ -1,9 +1,9 @@
 [build]
   # Build command for Nuxt 3
-  command = "npm run build"
+  command = "npm run generate"
   
-  # Output directory - Nuxt 3 outputs to .output by default
-  publish = ".output/public"
+  # Since your site is likely static (portfolio, personal site, etc.), you should deploy the generated static files.
+  publish = "dist"
   
   # Functions directory for server-side rendering
   functions = ".output/server"
