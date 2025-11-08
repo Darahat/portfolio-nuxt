@@ -9,7 +9,8 @@ export default defineNuxtPlugin(() => {
           "@type": "Person",
           name: "Didarul Alam Rahat",
           url: "https://darahat.dev",
-          image: "https://darahat.dev/images/about/about-img.webp",
+          image:
+            "https://darahat.dev/images/about/rahat-flutter-developer.webp",
           sameAs: [
             "https://www.linkedin.com/in/darahat/",
             "https://github.com/Darahat",

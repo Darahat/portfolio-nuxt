@@ -75,35 +75,40 @@ const projects = [
   {
     category: "SensorLab",
     title: "Mobile Sensor Toolkit & Tools",
-    image: "/images/portfolio/port-img6.webp",
+    image:
+      "/images/portfolio/sensorlab-flutter-android-app-development-darahat.webp",
     modalId: "sensorlab",
     class: "",
   },
   {
     category: "Flutter Mobile App",
     title: "Flutter Mobile App for Bangladesh Agricultural University(BAU)",
-    image: "/images/portfolio/port-img4.webp",
+    image:
+      "/images/portfolio/bau-e-diary-flutter-android-app-development-for-bangladesh-agricultural-university-darahat.webp",
     modalId: "bau",
     class: "theme-border-bottom",
   },
   {
     category: "Smart Contract",
     title: "Stake Hive DeFi DApp",
-    image: "/images/portfolio/port-img5.webp",
+    image:
+      "/images/portfolio/decentralized-stacking-platform-web3-app-stackhive-using-solidigy-darahat.webp",
     modalId: "stakehive",
     class: "",
   },
   {
     category: "Front End Development",
     title: "Front End Development for RUBI",
-    image: "/images/portfolio/port-img1.webp",
+    image:
+      "/images/portfolio/rubi-frontend-development-using-tailwindcss-vuejs-darahat.webp",
     modalId: "rubi",
     class: "",
   },
   {
     category: "Front End Development",
     title: "Website Development for The Network Tap Company",
-    image: "/images/portfolio/port-img2.webp",
+    image:
+      "/images/portfolio/the-network-tap-frontend-development-digital-card-and-user-profile-darahat.webp",
     modalId: "networktap",
     class: "",
   },

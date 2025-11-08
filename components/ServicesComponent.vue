@@ -104,6 +104,6 @@
 </template>
 
 <script setup>
-import serIcon1 from "/images/icon/ser-icon1.webp";
-import serIcon2 from "/images/icon/ser-icon2.webp";
+import serIcon2 from "/images/icon/flutter-app-development-android-and-ios-focus-on-performance-user-experience-icon-darahat.webp";
+import serIcon1 from "/images/icon/web-development-with-html-css-javascript-php-laravel-vuejs-coelgniter-icon-darahat.webp";
 </script>

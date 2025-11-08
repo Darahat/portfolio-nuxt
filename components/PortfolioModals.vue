@@ -328,9 +328,9 @@ defineProps({
 
 defineEmits(["close"]);
 
-import portImg1Large from "/images/portfolio/port-img1-large.webp";
-import portImg2Large from "/images/portfolio/port-img2-large.webp";
-import portImg4Large from "/images/portfolio/port-img4-large.webp";
-import portImg5Large from "/images/portfolio/port-img5-large.webp";
-import portImg6Large from "/images/portfolio/port-img6-large.webp";
+import portImg4Large from "/images/portfolio/bau-e-diary-flutter-android-app-development-for-bangladesh-agricultural-university-large-darahat.webp";
+import portImg5Large from "/images/portfolio/decentralized-stacking-platform-web3-app-stackhive-using-solidigy-large-darahat.webp";
+import portImg1Large from "/images/portfolio/rubi-frontend-development-using-tailwindcss-vuejs-large-darahat.webp";
+import portImg6Large from "/images/portfolio/sensorlab-flutter-android-app-development-large-darahat.webp";
+import portImg2Large from "/images/portfolio/the-network-tap-frontend-development-digital-card-and-user-profile-large-darahat.webp";
 </script>

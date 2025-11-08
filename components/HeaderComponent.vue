@@ -8,7 +8,7 @@
               <div class="logo mt-50 mb-50 transition5">
                 <NuxtLink class="header-logo" to="/">
                   <img
-                    src="/images/logo/logo.webp"
+                    src="/images/logo/darahat-full-stack-developer-logo.webp"
                     alt="Didarul Alam Rahat Logo"
                   />
                 </NuxtLink>

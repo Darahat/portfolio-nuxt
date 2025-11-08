@@ -3,7 +3,10 @@
     <div class="experience-wrapper extra-width position-relative">
       <div
         class="experience-bg-img left-0 top-0 bottom-0 bg-cover no-repeat w-50 position-absolute"
-        :style="{ backgroundImage: 'url(/images/work/work-img.webp)' }"
+        :style="{
+          backgroundImage:
+            'url(/images/work/full-stack-laravel-developer-and-flutter-app-developer-darahat-working.webp)',
+        }"
       />
       <div class="container">
         <div class="row">

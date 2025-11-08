@@ -6,7 +6,9 @@
       >
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-6 col-md-8 offset-md-0 col-sm-10 col-10">
+            <div
+              class="col-xl-6 col-lg-6 col-md-8 offset-md-0 col-sm-10 col-10"
+            >
               <div class="about-img-wrapper position-relative mb-90">
                 <div
                   class="about-img position-relative z-index11"
@@ -25,7 +27,7 @@
                       <img
                         class="border-radius10 position-relative z-index11"
                         loading="lazy"
-                        src="/images/about/about-img.webp"
+                        src="/images/about/rahat-flutter-developer.webp"
                         alt="Didarul Alam Rahat"
                       />
                     </div>
@@ -46,7 +48,7 @@
                     >
                       <img
                         class="download-bg rotate-animation d-inline-block"
-                        src="/images/about/download-bg.webp"
+                        src="/images/about/full-stack-web-developer-flutter-app-developer-resume-download-darahat.webp"
                         alt="Download CV"
                         loading="lazy"
                       />
@@ -57,7 +59,7 @@
                       >
                         <img
                           class="d-icon d-inline-block position-absolute"
-                          src="/images/icon/download-icon.webp"
+                          src="/images/icon/full-stack-web-developer-flutter-app-developer-resume-download-icon-darahat.webp"
                           alt="Download"
                           loading="lazy"
                         />
@@ -77,18 +79,26 @@
                       >About Me</span
                     >
                     <h2 class="mb-30">
-                      Hi, I'm Rahat — Senior Full-Stack Developer specialized in
-                      Flutter and Laravel.
+                      I build AI-powered Flutter and Web Apps — from
+                      Architecture to Deployment.
                     </h2>
+                    <p class="mb-25" style="font-style: italic; color: #555">
+                      I’m Rahat — a Full Stack Web, Flutter, and Web3 Developer
+                      with experience in AWS and DevOps.
+                    </p>
                   </div>
                 </div>
                 <p class="mb-25">
                   I'm <strong>Didarul Alam Rahat</strong>, a
-                  <strong>Senior Software Engineer</strong> based in Mymensingh,
-                  Bangladesh. With over 7 years of experience in
+                  <strong>Full Stack Web, Flutter, and Web3 Developer</strong>
+                  with experience in
+                  <strong>Nuxt.js, Laravel, AWS, and DevOps</strong>. With over
+                  7 years of experience in
                   <strong>mobile and web application development</strong>, I
-                  specialize in <strong>Flutter (Android & iOS)</strong> and
-                  <strong>Laravel</strong> frameworks.
+                  specialize in <strong>Flutter (Android & iOS)</strong>,
+                  <strong>Laravel</strong>, and
+                  <strong>Nuxt.js</strong> frameworks. Available for remote
+                  projects and freelance work.
                 </p>
                 <p class="mb-25">
                   I'm passionate about
@@ -96,7 +106,11 @@
                     >clean code, project architecture, planning, and project
                     management</strong
                   >. I believe great software starts with a strong foundation —
-                  combining technical precision with thoughtful design.
+                  combining technical precision with thoughtful design. If
+                  you're looking to
+                  <strong>hire a remote full stack developer</strong> or
+                  <strong>freelance AI integration developer</strong>, let's
+                  connect!
                 </p>
 
                 <div class="about-info-wrapper pt-25 pb-20 mt-25">
@@ -144,6 +158,65 @@
                   <a href="#contact" class="btn btn-primary"
                     >Hire Me for Your Next Project</a
                   >
+                  <div class="mt-3">
+                    <span class="mr-2">Find me on:</span>
+                    <a
+                      href="https://github.com/Darahat"
+                      target="_blank"
+                      rel="noopener"
+                      class="mr-2"
+                    >
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a
+                      href="www.linkedin.com/in/darahat"
+                      target="_blank"
+                      rel="noopener"
+                      class="mr-2"
+                    >
+                      <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a
+                      href="https://stackoverflow.com/users/3424210/didarul-alam-rahat"
+                      target="_blank"
+                      rel="noopener"
+                      class="mr-2"
+                    >
+                      <i class="fab fa-stack-overflow"></i> Stack Overflow
+                    </a>
+                    <a
+                      href="https://developers.google.com/profile/u/darahat"
+                      target="_blank"
+                      rel="noopener"
+                      class="mr-2"
+                    >
+                      <i class="fab fa-fiverr"></i> Fiverr
+                    </a>
+                    <a
+                      href="https://medium.com/@darahat42"
+                      target="_blank"
+                      rel="noopener"
+                      class="mr-2"
+                    >
+                      <i class="fab fa-medium"></i> Medium
+                    </a>
+                    <a
+                      href="https://www.producthunt.com/@didarul_alam_rahat"
+                      target="_blank"
+                      rel="noopener"
+                      class="mr-2"
+                    >
+                      <i class="fab fa-product-hunt"></i> Product Hunt
+                    </a>
+                    <a
+                      href="https://developers.google.com/profile/u/darahat"
+                      target="_blank"
+                      rel="noopener"
+                      class="mr-2"
+                    >
+                      <i class="fab fa-google"></i> Google Developer
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -155,7 +228,29 @@
 </template>
 
 <script setup>
+import { useHead } from "#imports";
 import { onMounted } from "vue";
+
+useHead({
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Didarul Alam Rahat",
+        url: "https://darahat.dev",
+        jobTitle: "Full Stack Developer",
+        sameAs: [
+          "https://www.linkedin.com/in/rahatdev",
+          "https://github.com/rahatdev",
+          "https://twitter.com/rahatdev",
+        ],
+        knowsAbout: ["Flutter", "Laravel", "Nuxt.js", "AWS", "DevOps", "Web3"],
+      }),
+    },
+  ],
+});
 
 onMounted(() => {
   // if (import.meta.client && window.VanillaTilt) {

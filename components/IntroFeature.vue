@@ -12,7 +12,7 @@
           >
             <div class="intro-ft-icon d-inline-block mb-30 transition5">
               <img
-                src="/images/icon/intro-ft-icon1.webp"
+                src="/images/icon/dedicated-senior-full-stack-developer-icon-darahat.webp"
                 alt="Dedication"
                 loading="lazy"
               />
@@ -36,7 +36,7 @@
           >
             <div class="intro-ft-icon d-inline-block mb-30 transition5">
               <img
-                src="/images/icon/intro-ft-icon2.webp"
+                src="/images/icon/focused-software-architecture-planning-reusable-component-smart-work-darahat.webp"
                 alt="Smart Work"
                 loading="lazy"
               />
@@ -60,7 +60,7 @@
           >
             <div class="intro-ft-icon d-inline-block mb-30 transition5">
               <img
-                src="/images/icon/intro-ft-icon3.webp"
+                src="/images/icon/lead-collaborate-cross-functional-team-managing-project-agile-dev-collaboration-darahat.webp"
                 alt="Collaboration"
                 loading="lazy"
               />
@@ -84,7 +84,7 @@
           >
             <div class="intro-ft-icon d-inline-block mb-30 transition5">
               <img
-                src="/images/icon/intro-ft-icon4.webp"
+                src="/images/icon/laravel-tailwindcss-vuejs-javascript-mysql-rest-api-flutter-aws-project-management-technology-darahat.webp"
                 alt="Technology"
                 loading="lazy"
               />

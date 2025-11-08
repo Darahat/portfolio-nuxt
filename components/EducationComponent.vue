@@ -58,7 +58,7 @@
           >
             <img
               class="border-radius10"
-              src="/images/education/education-img.webp"
+              src="/images/education/study-bsc-in-software-engineering-daffodil-international-university-darahat.webp"
               alt="Education"
               loading="lazy"
             />

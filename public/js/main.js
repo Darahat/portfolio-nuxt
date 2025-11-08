@@ -247,7 +247,7 @@
 
 
     var greenIcon = L.icon({
-        iconUrl: "images/icon/map-marker.webp",
+        iconUrl: "images/icon/portfolio-location-map-marker-icon-darahat.webp",
 
         iconSize: [78, 78], // size of the icon
         // shadowUrl: 'my-icon-shadow.png',

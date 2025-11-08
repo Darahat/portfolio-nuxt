@@ -59,33 +59,43 @@ const brands = ref([
   {
     name: "RUBI",
     url: "https://www.rubi.com/en",
-    image: "/images/brand/brand-img1.webp",
+    image: "/images/brand/rubi-responsive-frontend-design-darahat.webp",
   },
   {
     name: "Zyco",
     url: "https://zyco.co/",
-    image: "/images/brand/brand-img2.webp",
+    image:
+      "/images/brand/zyco-backend-portal-development-using-laravel-darahat.webp",
   },
   {
     name: "BAU",
     url: "https://bau.edu.bd",
-    image: "/images/brand/brand-img3.webp",
+    image:
+      "/images/brand/bangladesh-agricultural-university-erp-website-flutter-android-app-design-development-darahat.webp",
   },
   {
     name: "Funush",
     url: "https://www.funush.com/",
-    image: "/images/brand/brand-img4.webp",
+    image:
+      "/images/brand/funush-careerki-full-stack-development-vuejs-node-darahat.webp",
   },
   {
     name: "Otcantipiojos",
     url: "https://otcantipiojos.es/",
-    image: "/images/brand/brand-img5.webp",
+    image:
+      "/images/brand/otcantipiojos-animated-ads-design-using-html-css-darahat.webp",
   },
   {
     name: "Network Tap",
     url: "https://thenetworktap.com/",
-    image: "/images/brand/brand-img6.webp",
+    image:
+      "/images/brand/thenetworktap-digital-card-user-profile-frondend-development-darahat.webp",
   },
-  { name: "ELP", url: "#", image: "/images/brand/brand-img7.webp" },
+  {
+    name: "ELP",
+    url: "#",
+    image:
+      "/images/brand/e-learning-platform-frontend-development-darahat.webp",
+  },
 ]);
 </script>

@@ -48,14 +48,20 @@
                   >Hello, I'm</span
                 >
                 Didarul Alam <span class="hm2-m-hero-text-style">Rahat</span>
+                <br />
+                <span style="font-style: italic; color: #eee; font-size: 1rem">
+                  I’m Rahat — a Full Stack Web, Flutter, and Web3 Developer with
+                  experience in AWS and DevOps.
+                </span>
               </h1>
               <h2 class="text-capitalize white-text mb-45">
-                A Passionate
+                I build AI-powered Flutter and Web Apps — from Architecture to
+                Deployment.<br />
                 <span class="d-text d-block d-sm-inline-block">
                   <span
                     id="main"
                     class="typer primary-color d-inline-block pl-2"
-                    data-words="Full Stack Developer, Flutter App Developer, Web3 Enthusiast, DeFi Builder, Remote Freelancer"
+                    data-words="Remote full stack developer, Hire Flutter app developer, Nuxt.js + Laravel full stack developer, Freelance AI integration developer"
                     data-delay="50"
                     data-colors="#25262f"
                   />
@@ -129,7 +135,29 @@
 </template>
 
 <script setup>
+import { useHead } from "#imports";
 import { onMounted } from "vue";
+
+useHead({
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Didarul Alam Rahat",
+        url: "https://darahat.dev",
+        jobTitle: "Full Stack Developer",
+        sameAs: [
+          "https://www.linkedin.com/in/rahatdev",
+          "https://github.com/rahatdev",
+          "https://twitter.com/rahatdev",
+        ],
+        knowsAbout: ["Flutter", "Laravel", "Nuxt.js", "AWS", "DevOps", "Web3"],
+      }),
+    },
+  ],
+});
 
 onMounted(() => {
   if (import.meta.client) {

@@ -1,8 +1,8 @@
 export const testimonials = [
   {
-    clientName: "synnko",
+    clientName: "synnko", 
     workTitle: "Vue.js and Laravel app debugging and enhancement",
-    image: "/images/testimonial/Fiverr1.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-vuejs-laravel-app-debugging-enhancement-darahat.webp",
     imageAlt: "Fiverr client synnko testimonial for Vue.js and Laravel project",
     reviewText:
       "I had an issue with my app, and he fixed it in no time. Can only recommend, he really knows his stuff.",
@@ -11,7 +11,7 @@ export const testimonials = [
   {
     clientName: "synnko",
     workTitle: "Custom frontend and backend improvements using Vuetify and Laravel",
-    image: "/images/testimonial/Fiverr2.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-custom-fullstack-development-vuetify-laravel-darahat.webp",
     imageAlt: "Positive Fiverr review from synnko for Vue.js development service",
     reviewText:
       "The quality and speed of the work was exceptional, he delivered everything I needed and more. Very nice to work with.",
@@ -20,7 +20,7 @@ export const testimonials = [
   {
     clientName: "synnko",
     workTitle: "Full-stack feature development with Vue.js and Laravel integration",
-    image: "/images/testimonial/Fiverr3.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-full-stack-dev-vuejs-laravel-integration-darahat.webp",
     imageAlt: "Client review about Vue.js development work by Rahat",
     reviewText:
       "Second order already, and just like last time, it was a pleasure to work with him, and I'm happy with the end result.",
@@ -29,7 +29,7 @@ export const testimonials = [
   {
     clientName: "weidechang97",
     workTitle: "Responsive frontend design using Vuetify and Vue.js",
-    image: "/images/testimonial/Fiverr4.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-responsive-frontend-design-vuetify-vuejs-darahat.webp",
     imageAlt: "Client review for frontend coding and communication excellence",
     reviewText:
       "Really solid work on the frontend coding! Everything looks and functions exactly as I hoped. Attention to detail and commitment were outstanding.",
@@ -38,7 +38,7 @@ export const testimonials = [
   {
     clientName: "synnko",
     workTitle: "Vue.js UI optimization and custom Laravel feature fixes",
-    image: "/images/testimonial/Fiverr5.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-vuejs-ui-optimization-custom-laravel-feature-darahat.webp",
     imageAlt: "Client testimonial about excellent communication during project",
     reviewText: "Excellent communication throughout the project.",
     gigCategory: "Web Development",
@@ -46,7 +46,7 @@ export const testimonials = [
   {
     clientName: "weidechang97",
     workTitle: "UI/UX enhancement and Vue.js interface improvements",
-    image: "/images/testimonial/Fiverr6.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-uiux-enhancement-vuejs-interface-improve-darahat.webp",
     imageAlt: "Client praising design and development skills",
     reviewText: "Impressive design and development skills.",
     gigCategory: "UI/UX & Vue.js",
@@ -54,7 +54,7 @@ export const testimonials = [
   {
     clientName: "awaiszafar705",
     workTitle: "Bug fixing and performance tuning for web applications",
-    image: "/images/testimonial/Fiverr7.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-bug-fix-performance-tuning-laravel-web-application-darahat.webp",
     imageAlt: "Client praising Vue.js web development service",
     reviewText: "Great work.",
     gigCategory: "Web Application Fixes",
@@ -62,7 +62,7 @@ export const testimonials = [
   {
     clientName: "awaiszafar705",
     workTitle: "Frontend and backend synchronization in Vue.js and Laravel",
-    image: "/images/testimonial/Fiverr8.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-full-stack-dev-sync-vuejs-laravel-darahat.webp",
     imageAlt: "Client feedback on professional web development delivery",
     reviewText: "Great work.",
     gigCategory: "Vue.js Development",
@@ -70,7 +70,7 @@ export const testimonials = [
   {
     clientName: "dgabs910",
     workTitle: "Full-stack project maintenance and communication excellence",
-    image: "/images/testimonial/Fiverr9.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-full-stack-project-maintenance-communication-excellence-darahat.webp",
     imageAlt: "Client testimonial on communication and satisfaction",
     reviewText:
       "Overall amazing work and great communication, very satisfied.",
@@ -79,7 +79,7 @@ export const testimonials = [
   {
     clientName: "wireddev",
     workTitle: "Advanced Laravel API development with Vue.js frontend",
-    image: "/images/testimonial/Fiverr10.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-advance-laravel-api-development-vuejs-frontend-darahat.webp",
     imageAlt: "Fiverr review highlighting Laravel and Vue.js expertise",
     reviewText:
       "Thanks, you are the most expert freelancer on Fiverr around Laravel and Vue.js, A+++++",
@@ -88,7 +88,7 @@ export const testimonials = [
   {
     clientName: "arshaanfaraaz",
     workTitle: "Custom Laravel and Vue.js integration for scalable solutions",
-    image: "/images/testimonial/Fiverr11.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-custom-laravel-vuejs-integration-scalable-sass-solution-darahat.webp",
     imageAlt: "Client praising experience in Vue.js and Laravel projects",
     reviewText: "Very experienced.",
     gigCategory: "Custom Web Solutions",
@@ -96,7 +96,7 @@ export const testimonials = [
   {
     clientName: "weidechang97",
     workTitle: "Complex bug resolution and frontend optimization in Vue.js",
-    image: "/images/testimonial/Fiverr12.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-complex-bug-resolution-frontend-optimization-vuejs-darahat.webp",
     imageAlt: "Detailed client testimonial praising problem-solving skills",
     reviewText:
       "They exhibited remarkable tenacity in solving complex bugs and communicated clearly throughout the process.",
@@ -105,7 +105,7 @@ export const testimonials = [
   {
     clientName: "alexgvidal",
     workTitle: "Long-term web collaboration with Laravel and Vue.js",
-    image: "/images/testimonial/Fiverr13.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-long-term-web-collaboration-laravel-vuejs-darahat.webp",
     imageAlt: "Repeat client testimonial praising reliability and teamwork",
     reviewText:
       "Perfect, as always! A pleasure to work with you. Of course, we’ll continue to collaborate together.",
@@ -114,7 +114,7 @@ export const testimonials = [
   {
     clientName: "alexgvidal",
     workTitle: "Reliable Laravel and Vue.js delivery and support",
-    image: "/images/testimonial/Fiverr14.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-reliable-laravel-vuejs-delivery-support.webp",
     imageAlt: "Client testimonial emphasizing communication and delivery",
     reviewText: "Everything perfect with communication and releases. Thanks a lot, Rahat!",
     gigCategory: "Reliable Delivery",
@@ -122,7 +122,7 @@ export const testimonials = [
   {
     clientName: "kobecode",
     workTitle: "Backend API and feature development using Laravel and CodeIgniter",
-    image: "/images/testimonial/Fiverr15.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-backend-api-feature-development-using-laravel-codigniter-darahat.webp",
     imageAlt: "Client praising Laravel and PHP development communication",
     reviewText: "Excellent communication throughout the project.",
     gigCategory: "Backend Development (PHP/Laravel)",
@@ -130,7 +130,7 @@ export const testimonials = [
   {
     clientName: "user30571961",
     workTitle: "Full-stack PHP and Laravel system upgrade",
-    image: "/images/testimonial/Fiverr16.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-full-stack-php-laravel-system-upgrade-darahat.webp",
     imageAlt: "Client complimenting design and development expertise",
     reviewText: "Impressive design and development skills.",
     gigCategory: "Full-stack PHP Development",
@@ -138,7 +138,7 @@ export const testimonials = [
   {
     clientName: "bluedotsglobal",
     workTitle: "Custom PHP-based website redesign and enhancement",
-    image: "/images/testimonial/Fiverr17.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-custom-php-laravel-based-website-redesign-enhancement-darahat.webp",
     imageAlt: "Satisfied client testimonial for PHP Laravel project",
     reviewText: "The final product exceeded expectations.",
     gigCategory: "Custom PHP Development",
@@ -146,7 +146,7 @@ export const testimonials = [
   {
     clientName: "jamiequinn335",
     workTitle: "Rapid Laravel website debugging and improvements",
-    image: "/images/testimonial/Fiverr18.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-rapid-laravel-website-debugging-improvements.webp",
     imageAlt: "Client testimonial on fast delivery and detail orientation",
     reviewText: "Quick turnaround and attention to detail.",
     gigCategory: "Laravel Website Fixes",
@@ -154,7 +154,7 @@ export const testimonials = [
   {
     clientName: "bluedotsglobal",
     workTitle: "Collaborative Laravel and Vue.js project development",
-    image: "/images/testimonial/Fiverr19.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-collaborative-laravel-vuejs-project-development.webp",
     imageAlt: "Positive feedback on collaboration and teamwork",
     reviewText: "A pleasure to collaborate with.",
     gigCategory: "Collaborative Web Development",
@@ -162,7 +162,7 @@ export const testimonials = [
   {
     clientName: "alexgvidal",
     workTitle: "Animated HTML5 banner creation from PSD to code",
-    image: "/images/testimonial/Fiverr20.webp",
+    image: "/images/testimonial/fiverr-client-five-star-review-animated-html5-banner-creation-from-psd-to-code.webp",
     imageAlt: "Client praising animated HTML5 banner design",
     reviewText: "Perfect like always, a pleasure working with Didar.",
     gigCategory: "Animated HTML5 Ads",

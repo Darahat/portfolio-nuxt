@@ -126,7 +126,7 @@
 
 <script setup>
 import { ref } from "vue";
-import logoDark from "/images/logo/logo-dark.webp";
+import logoDark from "/images/logo/darahat-full-stack-developer-logo.webp";
 
 const email = ref("");
 

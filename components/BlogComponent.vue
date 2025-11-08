@@ -87,7 +87,8 @@ import { ref } from "vue";
 
 const blogPosts = ref([
   {
-    image: "/images/blog/blog-img3.webp",
+    image:
+      "/images/blog/my-100-day-github-streak-how-i-reinvented-myself-for-remote-work-darahat.webp",
     category: "My Journey",
     author: "darahat42",
     authorLink: "https://medium.com/@darahat42",
@@ -96,34 +97,33 @@ const blogPosts = ref([
     link: "https://medium.com/@darahat42/my-100-day-github-streak-how-i-reinvented-myself-for-remote-work-87aa6cd55c87",
   },
   {
-    image: "/images/blog/blog-img2.webp",
+    image: "/images/blog/stakehive-decentralized-staking-platform-darahat.webp",
     category: "Smart Contract",
     author: "darahat42",
     authorLink: "https://medium.com/@darahat42",
     likes: "16",
-    title:
-      "From Curiosity to Code: My DeFi App Journey (and Lessons You Can Steal)",
-    link: "https://medium.com/@darahat42/from-curiosity-to-code-my-defi-app-journey-and-lessons-you-can-steal-121fc20eb14c",
+    title: "How I built a DeFi DApp with Nuxt.js and Solidity",
+    link: "https://medium.com/@darahat42/how-i-built-a-defi-dapp-with-nuxtjs-and-solidity-121fc20eb14c",
   },
   {
-    image: "/images/blog/blog-img1.webp",
-    category: "Web Design",
+    image:
+      "/images/blog/build-single-page-crud-application-from-scratch-darahat.webp",
+    category: "AI & Flutter",
     author: "darahat42",
     authorLink: "https://medium.com/@darahat42",
-    likes: "162",
-    title:
-      "Create a CRUD Application (A Blog Site) using Laravel 10 & Vue 3 from scratch. Part-1",
-    link: "https://medium.com/@darahat42/create-a-crud-application-a-blog-site-using-laravel-8-vue-js-from-scratch-part-1-e9e20eb68a0c",
+    likes: "10",
+    title: "Optimizing Flutter apps for offline AI processing",
+    link: "https://medium.com/@darahat42/optimizing-flutter-apps-for-offline-ai-processing-xyz",
   },
   {
-    image: "/images/blog/blog-img1.webp",
+    image:
+      "/images/blog/build-single-page-crud-application-from-scratch-darahat.webp",
     category: "Web Development",
     author: "darahat42",
     authorLink: "https://medium.com/@darahat42",
     likes: "80",
-    title:
-      "Create a CRUD Application (A Blog Site) using Laravel & Vue JS from scratch. Part-2",
-    link: "https://medium.com/@darahat42/create-a-crud-application-a-blog-site-using-laravel-vue-js-from-scratch-part-2-fdbc933d1fd",
+    title: "Deploying Laravel + Nuxt full stack projects on AWS",
+    link: "https://medium.com/@darahat42/deploying-laravel-nuxt-full-stack-projects-on-aws-abc",
   },
 ]);
 </script>
