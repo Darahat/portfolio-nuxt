@@ -1,0 +1,39 @@
+[build]
+  # Build command for Nuxt 3
+  command = "npm run build"
+  
+  # Output directory - Nuxt 3 outputs to .output by default
+  publish = ".output/public"
+  
+  # Functions directory for server-side rendering
+  functions = ".output/server"
+
+# Environment variables (you can add more as needed)
+[build.environment]
+  NODE_VERSION = "18"
+
+# Redirect rules (optional - for SPA fallback)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for security and performance (optional but recommended)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache static assets
+[[headers]]
+  for = "/_nuxt/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
