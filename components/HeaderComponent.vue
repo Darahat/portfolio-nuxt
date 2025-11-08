@@ -25,7 +25,7 @@
                     <li><a href="#work">Works</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+                    <li><a href="#blog">Blog</a></li>
                   </ul>
                 </nav>
               </div>
