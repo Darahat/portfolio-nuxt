@@ -31,7 +31,9 @@
               >
                 <a
                   class="single-brand pt-20 d-block text-center transition3"
-                  href="#"
+                  :href="brand.url"
+                  :target="brand.url && brand.url !== '#' ? '_blank' : '_self'"
+                  :rel="brand.url && brand.url !== '#' ? 'noopener' : null"
                 >
                   <img
                     class="img"

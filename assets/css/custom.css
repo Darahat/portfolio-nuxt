@@ -55,3 +55,87 @@
 .font-weight-600 {
   font-weight: 600;
 }
+
+/* Hero spacing: push hero content below transparent/sticky header
+   We add padding to the hero container at different breakpoints so the
+   heading doesn't overlap the nav. This is safer than inserting spacer
+   divs inside the template and works with the flex centering used.
+*/
+.container.slider-height {
+  padding-top: 0; /* default */
+}
+
+@media (min-width: 992px) {
+  /* large screens: leave room for desktop header */
+  .container.slider-height {
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* medium screens (tablet) */
+  .container.slider-height {
+    padding-top: 80px;
+  }
+}
+
+/* Reposition slider social icons on medium screens to avoid overlapping hero text */
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-social-link {
+    top: auto !important;
+    bottom: 30px !important;
+    right: 15px !important;
+    transform: none !important;
+  }
+
+  .slider-social-link .social {
+    padding-right: 20px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* small screens */
+  .container.slider-height {
+    padding-top: 48px;
+  }
+}
+
+/* ABOUT component: compact icons-only social links next to CTA */
+.about-social-links .social-link {
+  color: #555; /* muted, matches paragraph text */
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: all 0.18s ease;
+  text-decoration: none;
+}
+.about-social-links .social-link i {
+  line-height: 1;
+}
+.about-social-links .social-link:hover {
+  color: #fff;
+  background: #007bff; /* primary accent on hover */
+  transform: translateY(-2px);
+}
+.about-social-links .meta-text-color {
+  font-size: 14px;
+}
+
+@media (max-width: 575px) {
+  /* On small screens stack button and icons visually (button first, icons below) */
+  .about-social-links {
+    margin-top: 0.75rem;
+  }
+}
+
+/* small image inside social-link when using an <img> fallback (like Fiverr) */
+.about-social-links .social-img {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  object-fit: contain;
+}

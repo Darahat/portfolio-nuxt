@@ -155,66 +155,86 @@
                 <div
                   class="about-footer-content d-sm-flex align-items-center mt-lg-2 mt-sm-4 mt-3"
                 >
-                  <a href="#contact" class="btn btn-primary"
-                    >Hire Me for Your Next Project</a
+                  <!-- Left: primary CTA -->
+                  <div class="mr-3">
+                    <a href="#contact" class="btn btn-primary"
+                      >Hire Me for Your Next Project</a
+                    >
+                  </div>
+
+                  <!-- Right: icons-only social links. Kept compact and styled in CSS. -->
+                  <div
+                    class="about-social-links d-flex align-items-center mt-3 mt-sm-0"
                   >
-                  <div class="mt-3">
-                    <span class="mr-2">Find me on:</span>
+                    <span class="meta-text-color d-none d-sm-inline-block mr-2"
+                      >Find me:</span
+                    >
                     <a
                       href="https://github.com/Darahat"
                       target="_blank"
                       rel="noopener"
-                      class="mr-2"
+                      class="mr-2 social-link"
+                      aria-label="GitHub"
                     >
-                      <i class="fab fa-github"></i> GitHub
+                      <i class="fab fa-github"></i>
                     </a>
                     <a
-                      href="www.linkedin.com/in/darahat"
+                      href="https://www.linkedin.com/in/darahat"
                       target="_blank"
                       rel="noopener"
-                      class="mr-2"
+                      class="mr-2 social-link"
+                      aria-label="LinkedIn"
                     >
-                      <i class="fab fa-linkedin"></i> LinkedIn
+                      <i class="fab fa-linkedin"></i>
                     </a>
                     <a
                       href="https://stackoverflow.com/users/3424210/didarul-alam-rahat"
                       target="_blank"
                       rel="noopener"
-                      class="mr-2"
+                      class="mr-2 social-link"
+                      aria-label="Stack Overflow"
                     >
-                      <i class="fab fa-stack-overflow"></i> Stack Overflow
+                      <i class="fab fa-stack-overflow"></i>
                     </a>
                     <a
-                      href="https://developers.google.com/profile/u/darahat"
+                      href="https://www.fiverr.com/"
                       target="_blank"
                       rel="noopener"
-                      class="mr-2"
+                      class="mr-2 social-link"
+                      aria-label="Fiverr"
                     >
-                      <i class="fab fa-fiverr"></i> Fiverr
+                      <img
+                        src="/images/icon/client-five-star-review-all-project-fiverr-icon.svg"
+                        alt="Fiverr"
+                        class="social-img"
+                      />
                     </a>
                     <a
                       href="https://medium.com/@darahat42"
                       target="_blank"
                       rel="noopener"
-                      class="mr-2"
+                      class="mr-2 social-link"
+                      aria-label="Medium"
                     >
-                      <i class="fab fa-medium"></i> Medium
+                      <i class="fab fa-medium"></i>
                     </a>
                     <a
                       href="https://www.producthunt.com/@didarul_alam_rahat"
                       target="_blank"
                       rel="noopener"
-                      class="mr-2"
+                      class="mr-2 social-link"
+                      aria-label="Product Hunt"
                     >
-                      <i class="fab fa-product-hunt"></i> Product Hunt
+                      <i class="fab fa-product-hunt"></i>
                     </a>
                     <a
                       href="https://developers.google.com/profile/u/darahat"
                       target="_blank"
                       rel="noopener"
-                      class="mr-2"
+                      class="mr-2 social-link"
+                      aria-label="Google Developer"
                     >
-                      <i class="fab fa-google"></i> Google Developer
+                      <i class="fab fa-google"></i>
                     </a>
                   </div>
                 </div>

@@ -73,13 +73,13 @@
               </h2>
               <a
                 href="#contact"
-                class="btn position-relative over-hidden theme-bg text-uppercase transition5 mr-3"
+                class="btn position-relative over-hidden theme-bg text-uppercase transition5 mr-3 mb-3"
               >
                 Hire Me
               </a>
               <a
                 href="#about"
-                class="btn position-relative over-hidden bg-transparent main-border text-uppercase transition5"
+                class="btn position-relative over-hidden bg-transparent main-border text-uppercase transition5 mb-3"
               >
                 About Me
               </a>
@@ -149,9 +149,9 @@ useHead({
         url: "https://darahat.dev",
         jobTitle: "Full Stack Developer",
         sameAs: [
-          "https://www.linkedin.com/in/rahatdev",
-          "https://github.com/rahatdev",
-          "https://twitter.com/rahatdev",
+          "https://www.linkedin.com/in/darahat",
+          "https://github.com/Darahat",
+          "https://x.com/darahat42",
         ],
         knowsAbout: ["Flutter", "Laravel", "Nuxt.js", "AWS", "DevOps", "Web3"],
       }),
