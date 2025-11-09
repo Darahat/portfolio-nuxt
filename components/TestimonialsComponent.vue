@@ -20,6 +20,10 @@
                   class="theme-color"
                   :src="testimonialIcon"
                   alt="Quotation icon"
+                  width="48"
+                  height="48"
+                  srcset="/images/testimonial/testimonial-icon.webp 48w"
+                  sizes="48px"
                   loading="lazy"
                 />
               </div>
@@ -55,6 +59,10 @@
                         <img
                           :src="testimonial.image"
                           :alt="`${testimonial.clientName} - ${testimonial.workTitle}`"
+                          width="80"
+                          height="80"
+                          srcset="/images/testimonial/testimonial-img.webp 80w"
+                          sizes="80px"
                           loading="lazy"
                           itemprop="image"
                         />
@@ -98,6 +106,10 @@
                 class="border-radius10"
                 :src="testimonialsImg"
                 alt="Happy clients sharing testimonials"
+                width="320"
+                height="320"
+                srcset="/images/testimonial/testimonial-img.webp 320w"
+                sizes="320px"
                 loading="lazy"
               />
             </div>
@@ -113,7 +125,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { testimonials } from "~/data/testimonials.js";
 import testimonialIcon from "/images/testimonial/testimonial-icon.webp";
-import testimonialsImg from "/images/testimonial/testimonials-img.webp";
+import testimonialsImg from "/images/testimonial/testimonial-img.webp";
 
 /* ✅ Generate structured data dynamically */
 const schema = JSON.stringify(

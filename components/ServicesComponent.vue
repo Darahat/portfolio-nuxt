@@ -28,7 +28,13 @@
                     <img
                       class="position-relative z-index1"
                       :src="serIcon1"
-                      alt="Web Development"
+                      alt="Web Development Icon"
+                      width="64"
+                      height="64"
+                      srcset="
+                        /images/icon/web-development-with-html-css-javascript-php-laravel-vuejs-coelgniter-icon-darahat.webp 64w
+                      "
+                      sizes="64px"
                       loading="lazy"
                     />
                     <div
@@ -70,7 +76,13 @@
                     <img
                       class="position-relative z-index1"
                       :src="serIcon2"
-                      alt="App Development"
+                      alt="Flutter App Development Icon"
+                      width="64"
+                      height="64"
+                      srcset="
+                        /images/icon/flutter-app-development-android-and-ios-focus-on-performance-user-experience-icon-darahat.webp 64w
+                      "
+                      sizes="64px"
                       loading="lazy"
                     />
                     <div

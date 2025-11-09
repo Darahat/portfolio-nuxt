@@ -60,6 +60,7 @@
                     data-bgcolor="#f1f2f6"
                     data-fgcolor="#9b9db1"
                     data-thickness=".06"
+                    aria-label="Front-End Development skill level 80%"
                     readonly
                   />
                   <h4 class="mt-15 text-center">Front-End Development</h4>
@@ -80,69 +81,10 @@
                     data-bgcolor="#f1f2f6"
                     data-fgcolor="#9b9db1"
                     data-thickness=".06"
+                    aria-label="Back-End Development skill level 95%"
                     readonly
                   />
                   <h4 class="mt-15 text-center">Back-End Development</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-9 mb-30">
-              <div class="single-skill text-center text-lg-right">
-                <div class="progress-circular over-hidden">
-                  <input
-                    type="text"
-                    class="knob"
-                    value="0"
-                    data-rel="90"
-                    data-width="190"
-                    data-height="190"
-                    data-bgcolor="#f1f2f6"
-                    data-fgcolor="#9b9db1"
-                    data-thickness=".06"
-                    readonly
-                  />
-                  <h4 class="mt-15 text-center">Database</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-9 mb-30">
-              <div class="single-skill mb-15 text-center text-lg-left">
-                <div class="progress-circular over-hidden">
-                  <input
-                    type="text"
-                    class="knob"
-                    value="0"
-                    data-rel="75"
-                    data-width="190"
-                    data-height="190"
-                    data-bgcolor="#f1f2f6"
-                    data-fgcolor="#9b9db1"
-                    data-thickness=".06"
-                    readonly
-                  />
-                  <h4 class="mt-15 text-center">DevOps</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-9 mb-30">
-              <div class="single-skill text-center">
-                <div class="progress-circular over-hidden">
-                  <input
-                    type="text"
-                    class="knob"
-                    value="0"
-                    data-rel="75"
-                    data-width="190"
-                    data-height="190"
-                    data-bgcolor="#f1f2f6"
-                    data-fgcolor="#9b9db1"
-                    data-thickness=".06"
-                    readonly
-                  />
-                  <h4 class="mt-15 text-center">Flutter App Development</h4>
                 </div>
               </div>
             </div>
@@ -160,6 +102,70 @@
                     data-bgcolor="#f1f2f6"
                     data-fgcolor="#9b9db1"
                     data-thickness=".06"
+                    aria-label="Database skill level 70%"
+                    readonly
+                  />
+                  <h4 class="mt-15 text-center">Database</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-9 mb-30">
+              <div class="single-skill mb-15 text-center text-lg-left">
+                <div class="progress-circular over-hidden">
+                  <input
+                    type="text"
+                    class="knob"
+                    value="0"
+                    data-rel="90"
+                    data-width="190"
+                    data-height="190"
+                    data-bgcolor="#f1f2f6"
+                    data-fgcolor="#9b9db1"
+                    data-thickness=".06"
+                    aria-label="DevOps skill level 90%"
+                    readonly
+                  />
+                  <h4 class="mt-15 text-center">DevOps</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-9 mb-30">
+              <div class="single-skill text-center">
+                <div class="progress-circular over-hidden">
+                  <input
+                    type="text"
+                    class="knob"
+                    value="0"
+                    data-rel="90"
+                    data-width="190"
+                    data-height="190"
+                    data-bgcolor="#f1f2f6"
+                    data-fgcolor="#9b9db1"
+                    data-thickness=".06"
+                    aria-label="Flutter App Development skill level 90%"
+                    readonly
+                  />
+                  <h4 class="mt-15 text-center">Flutter App Development</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-9 mb-30">
+              <div class="single-skill text-center text-lg-right">
+                <div class="progress-circular over-hidden">
+                  <input
+                    type="text"
+                    class="knob"
+                    value="0"
+                    data-rel="65"
+                    data-width="190"
+                    data-height="190"
+                    data-bgcolor="#f1f2f6"
+                    data-fgcolor="#9b9db1"
+                    data-thickness=".06"
+                    aria-label="Project Management skill level 65%"
                     readonly
                   />
                   <h4 class="mt-15 text-center">Project Management</h4>

@@ -48,6 +48,8 @@
                   :src="project.image"
                   :alt="project.title"
                   loading="lazy"
+                  width="400"
+                  height="250"
                 />
                 <div
                   class="port-content text-center transition5 z-index11"

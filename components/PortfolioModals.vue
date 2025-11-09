@@ -25,8 +25,14 @@
               <img
                 class="w-100"
                 :src="portImg6Large"
-                alt="SensorLab"
+                alt="SensorLab Mobile Sensor Toolkit"
                 loading="lazy"
+                width="800"
+                height="600"
+                srcset="
+                  /images/portfolio/sensorlab-flutter-android-app-development-darahat.webp 800w
+                "
+                sizes="(max-width: 600px) 100vw, 800px"
               />
             </div>
             <div class="row">
@@ -94,8 +100,10 @@
               <img
                 class="w-100"
                 :src="portImg4Large"
-                alt="BAU App"
+                alt="BAU E-Diary Flutter App for Bangladesh Agricultural University"
                 loading="lazy"
+                width="800"
+                height="600"
               />
             </div>
             <div class="row">
@@ -122,6 +130,7 @@
                   <a
                     href="https://play.google.com/store/apps/details?id=com.bauictcell.bau_app"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn mt-20 pt-2 pb-2"
                     >View Live</a
                   >
@@ -158,8 +167,10 @@
               <img
                 class="w-100"
                 :src="portImg5Large"
-                alt="StakeHive"
+                alt="StakeHive DeFi DApp Decentralized Staking Platform"
                 loading="lazy"
+                width="800"
+                height="600"
               />
             </div>
             <div class="row">
@@ -218,8 +229,10 @@
               <img
                 class="w-100"
                 :src="portImg1Large"
-                alt="RUBI"
+                alt="RUBI Frontend Development using Vue.js and TailwindCSS"
                 loading="lazy"
+                width="800"
+                height="600"
               />
             </div>
             <div class="row">
@@ -278,8 +291,10 @@
               <img
                 class="w-100"
                 :src="portImg2Large"
-                alt="Network Tap"
+                alt="The Network Tap Digital Card Platform Frontend Development"
                 loading="lazy"
+                width="800"
+                height="600"
               />
             </div>
             <div class="row">

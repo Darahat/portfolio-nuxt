@@ -2,37 +2,61 @@
   <div id="home" class="slider-area slider-bg-color over-hidden">
     <div
       class="single-slider slider-height over-hidden position-relative xxl-device-width bg-cover no-repeat"
-      :style="{ backgroundImage: 'url(/images/slider/slider-bg.webp)' }"
     >
+      <!-- LCP image: use an <img> so we can set explicit width/height, eager loading and fetchpriority -->
+      <!-- Assumption: image natural size approx 1920x800. If you have exact dimensions, replace them below. -->
+      <picture>
+        <source
+          srcset="/images/slider/slider-bg.webp 1920w"
+          type="image/webp"
+        />
+        <img
+          class="hero-lcp-img position-absolute w-100 h-100"
+          src="/images/slider/slider-bg.webp"
+          srcset="/images/slider/slider-bg.webp 1920w"
+          sizes="100vw"
+          alt="Hero background"
+          width="1920"
+          height="800"
+          loading="eager"
+          fetchpriority="high"
+          style="object-fit: cover; inset: 0; z-index: 0"
+        />
+      </picture>
       <div id="scene" class="parallax position-absolute w-100 h-100 z-index1">
         <img
           data-depth="0.20"
           class="hero-shape hero-shape1 position-absolute d-none d-lg-inline-block"
           src="/images/shape/shape1.webp"
+          loading="lazy"
           alt="Shape 1"
         />
         <img
           data-depth="0.15"
           class="hero-shape hero-shape2 position-absolute d-none d-lg-inline-block"
           src="/images/shape/shape2.webp"
+          loading="lazy"
           alt="Shape 2"
         />
         <img
           data-depth="0.30"
           class="hero-shape hero-shape3 position-absolute d-none d-lg-inline-block"
           src="/images/shape/shape3.webp"
+          loading="lazy"
           alt="Shape 3"
         />
         <img
           data-depth="0.10"
           class="hero-shape hero-shape4 position-absolute d-none d-lg-inline-block"
           src="/images/shape/shape4.webp"
+          loading="lazy"
           alt="Shape 4"
         />
       </div>
 
       <div
         class="container slider-height d-flex align-items-center justify-content-center"
+        style="min-height: 520px"
       >
         <div class="row justify-content-center align-items-center h-100">
           <div class="col-12 d-flex align-items-center justify-content-center">
@@ -90,6 +114,7 @@
 
       <div
         class="slider-social-link position-absolute right-0 d-none d-md-block z-index11"
+        style="width: 48px; min-height: 220px"
       >
         <ul class="social pr-60">
           <li class="mt-10 mb-10 rotate-hover">
@@ -97,6 +122,7 @@
               class="text-center d-inline-block rotate"
               href="https://github.com/Darahat"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fab fa-github" />
             </a>
@@ -106,6 +132,7 @@
               class="text-center d-inline-block rotate"
               href="https://twitter.com/darahat42"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fab fa-twitter" />
             </a>
@@ -115,6 +142,7 @@
               class="text-center d-inline-block rotate"
               href="https://www.linkedin.com/in/didarulalamrahat/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fab fa-linkedin-in" />
             </a>
@@ -124,6 +152,7 @@
               class="text-center d-inline-block rotate"
               href="https://stackoverflow.com/users/3424210/didarul-alam-rahat"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fab fa-stack-overflow" />
             </a>
@@ -162,7 +191,17 @@ useHead({
 onMounted(() => {
   if (import.meta.client) {
     // Initialize parallax
-    initParallax();
+    // Only enable parallax on sufficiently large viewports and when the
+    // user hasn't requested reduced motion, and device looks capable.
+    const prefersReduced =
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const deviceMemoryOK =
+      !("deviceMemory" in navigator) ||
+      (navigator.deviceMemory && navigator.deviceMemory >= 2);
+    if (!prefersReduced && window.innerWidth > 991 && deviceMemoryOK) {
+      initParallax();
+    }
     // Initialize typer
     initTyper();
   }

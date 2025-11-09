@@ -57,7 +57,10 @@ export function useSkills() {
       initKnob();
       initAppear();
     } catch (error) {
-      console.error('Failed to load skill scripts:', error);
+      // Silently handle script loading errors in production
+      if (import.meta.dev) {
+        console.error('Failed to load skill scripts:', error);
+      }
     }
   });
 }

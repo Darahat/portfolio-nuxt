@@ -32,6 +32,7 @@
                       <a
                         href="https://www.linkedin.com/in/darahat/"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="text-dark hover-underline d-block"
                       >
                         Connect on LinkedIn

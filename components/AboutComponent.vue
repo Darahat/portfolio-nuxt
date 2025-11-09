@@ -29,6 +29,9 @@
                         loading="lazy"
                         src="/images/about/rahat-flutter-developer.webp"
                         alt="Didarul Alam Rahat"
+                        width="320"
+                        height="320"
+                        style="display: block; max-width: 100%; height: auto"
                       />
                     </div>
                     <div
@@ -172,7 +175,7 @@
                     <a
                       href="https://github.com/Darahat"
                       target="_blank"
-                      rel="noopener"
+                      rel="noopener noreferrer"
                       class="mr-2 social-link"
                       aria-label="GitHub"
                     >
@@ -181,7 +184,6 @@
                     <a
                       href="https://www.linkedin.com/in/darahat"
                       target="_blank"
-                      rel="noopener"
                       class="mr-2 social-link"
                       aria-label="LinkedIn"
                     >
@@ -190,7 +192,6 @@
                     <a
                       href="https://stackoverflow.com/users/3424210/didarul-alam-rahat"
                       target="_blank"
-                      rel="noopener"
                       class="mr-2 social-link"
                       aria-label="Stack Overflow"
                     >
@@ -199,20 +200,21 @@
                     <a
                       href="https://www.fiverr.com/"
                       target="_blank"
-                      rel="noopener"
                       class="mr-2 social-link"
                       aria-label="Fiverr"
                     >
                       <img
                         src="/images/icon/client-five-star-review-all-project-fiverr-icon.svg"
-                        alt="Fiverr"
+                        alt="Fiverr Icon"
                         class="social-img"
+                        width="16"
+                        height="16"
+                        style="object-fit: contain"
                       />
                     </a>
                     <a
                       href="https://medium.com/@darahat42"
                       target="_blank"
-                      rel="noopener"
                       class="mr-2 social-link"
                       aria-label="Medium"
                     >
@@ -221,7 +223,6 @@
                     <a
                       href="https://www.producthunt.com/@didarul_alam_rahat"
                       target="_blank"
-                      rel="noopener"
                       class="mr-2 social-link"
                       aria-label="Product Hunt"
                     >
@@ -230,7 +231,6 @@
                     <a
                       href="https://developers.google.com/profile/u/darahat"
                       target="_blank"
-                      rel="noopener"
                       class="mr-2 social-link"
                       aria-label="Google Developer"
                     >

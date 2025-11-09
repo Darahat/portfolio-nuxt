@@ -908,7 +908,7 @@
   color: var(--primary-color);
 }
 .secondary-color {
-  color: var(secondary-color);
+  color: var(--secondary-color);
 }
 .secondary-color2 {
   color: #4d4d5c;

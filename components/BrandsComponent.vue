@@ -40,6 +40,9 @@
                     :src="brand.image"
                     :alt="brand.name"
                     loading="lazy"
+                    width="120"
+                    height="48"
+                    style="display: block; max-width: 100%; height: auto"
                   />
                 </a>
               </swiper-slide>

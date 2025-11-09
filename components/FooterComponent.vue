@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer role="contentinfo">
     <div class="footer-area over-hidden pt-110 mb-60">
       <div class="footer-top">
         <div class="container">
@@ -38,6 +38,7 @@
                       class="twitter-bg text-center pr-0 text-white d-block rotate transition-3"
                       href="https://twitter.com/darahat42"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <i class="fab fa-twitter" />Twitter
                     </a>
@@ -47,6 +48,7 @@
                       class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3"
                       href="https://www.linkedin.com/in/didarulalamrahat"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <i class="fab fa-linkedin-in" />LinkedIn
                     </a>
@@ -92,6 +94,8 @@
                       class="facebook-bg text-center pr-0 text-white d-block transition-3 rotate"
                       href="https://twitter.com/darahat42"
                       target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Follow on Twitter"
                     >
                       <i class="fab fa-twitter" />Twitter
                     </a>
@@ -101,6 +105,8 @@
                       class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3"
                       href="https://www.linkedin.com/in/didarulalamrahat/"
                       target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Follow on LinkedIn"
                     >
                       <i class="fab fa-linkedin-in" />LinkedIn
                     </a>
@@ -110,6 +116,8 @@
                       class="instagram-bg text-center pr-0 text-white d-block rotate transition-3"
                       href="https://github.com/Darahat"
                       target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Follow on GitHub"
                     >
                       <i class="fab fa-github" />Github
                     </a>
@@ -132,7 +140,6 @@ const email = ref("");
 
 const handleNewsletter = () => {
   if (email.value) {
-    console.log("Newsletter subscription:", email.value);
     // Add your newsletter logic here
     email.value = "";
   }

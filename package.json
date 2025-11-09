@@ -28,6 +28,9 @@
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
-    "sass": "^1.93.3"
+    "lightningcss": "^1.30.2",
+    "sass": "^1.93.3",
+    "terser": "^5.44.1",
+    "vite-plugin-compression": "^0.5.1"
   }
 }

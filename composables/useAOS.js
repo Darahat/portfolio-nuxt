@@ -1,23 +1,53 @@
-import AOS from 'aos';
 import { nextTick } from 'vue';
+
+// Prefer using the global AOS instance (exposed by the plugin) when available
+const getAOS = () => {
+  try {
+    if (typeof window !== 'undefined' && window.AOS) return window.AOS;
+  } catch (e) {}
+  return null;
+};
 
 export const useAOS = () => {
   const initAOS = () => {
     if (import.meta.client) {
-      AOS.init({
-        duration: 1000,
-        easing: 'ease',
-        once: true,
-        offset: 120,
-        delay: 0,
-        anchorPlacement: 'top-bottom',
-      });
+      const AOS = getAOS();
+      if (AOS) {
+        try {
+          // If the Nuxt plugin already initialized AOS, prefer refresh to avoid duplicate init
+          // eslint-disable-next-line no-underscore-dangle
+          if (typeof window !== 'undefined' && (window).__AOS_NUXT_INITIALIZED) {
+            if (typeof AOS.refresh === 'function') AOS.refresh();
+            return;
+          }
+
+          if (typeof AOS.init === 'function') {
+            AOS.init({
+              duration: 1000,
+              easing: 'ease',
+              once: true,
+              offset: 120,
+              delay: 0,
+              anchorPlacement: 'top-bottom',
+            });
+            // mark initialized so subsequent calls don't re-init
+            try {
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-ignore
+              (window).__AOS_NUXT_INITIALIZED = true;
+            } catch (e) {}
+          }
+        } catch (e) {}
+      }
     }
   };
 
   const refreshAOS = () => {
-    if (import.meta.client && AOS) {
-      AOS.refresh();
+    if (import.meta.client) {
+      const AOS = getAOS();
+      if (AOS && typeof AOS.refresh === 'function') {
+        AOS.refresh();
+      }
     }
   };
 

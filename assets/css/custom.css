@@ -1,3 +1,41 @@
+/* ===== FONT LOADING OPTIMIZATION ===== */
+/* Override font-face declarations to use font-display: swap */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/fa-regular-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/fa-brands-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/flaticon-font/flaticon.woff2") format("woff2");
+}
+
+main.over-hiddenn {
+  min-height: 720px;
+  display: block;
+}
 .contact-card {
   background: #fff;
   border-radius: 10px;
@@ -102,7 +140,7 @@
 
 /* ABOUT component: compact icons-only social links next to CTA */
 .about-social-links .social-link {
-  color: #555; /* muted, matches paragraph text */
+  color: #333; /* improved contrast for accessibility */
   font-size: 16px;
   display: inline-flex;
   align-items: center;
@@ -117,8 +155,8 @@
   line-height: 1;
 }
 .about-social-links .social-link:hover {
-  color: #fff;
-  background: #007bff; /* primary accent on hover */
+  color: #f9fafb;
+  background: #0056b3; /* darker blue for better contrast */
   transform: translateY(-2px);
 }
 .about-social-links .meta-text-color {
@@ -138,4 +176,166 @@
   height: 16px;
   display: inline-block;
   object-fit: contain;
+}
+
+/* Performance hints for hero/parallax elements to reduce layout thrash */
+.parallax,
+#scene,
+.hero-shape {
+  /* Hint the browser these will be transformed — avoids some reflows */
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-origin: center center;
+}
+
+/* Prefer transform animations (GPU) rather than top/left changes. */
+.single-slider .bg-cover {
+  will-change: transform, opacity;
+}
+
+/* Stabilize slider social links and reserve space to prevent layout shifts (CLS) */
+.slider-social-link {
+  /* vertically center by default and offset from right edge */
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  /* give a predictable size so the browser can reserve compositor layers */
+  width: 48px;
+  pointer-events: auto;
+}
+
+/* Typing cursor can appear after JS loads; reserve a small width to avoid shift */
+.cursor {
+  display: inline-block;
+  min-width: 0.7ch; /* reserve roughly the width of a single character */
+  line-height: 1;
+  vertical-align: middle;
+  transition: none !important;
+}
+
+/* Header logo: explicit sizing to avoid layout shift while fonts and assets load */
+.header-logo img {
+  width: 160px; /* default desktop width */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .header-logo img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-logo img {
+    width: 110px;
+  }
+}
+
+/* Reserve a stable minimum hero height so background LCP doesn't cause a shift */
+.single-slider {
+  min-height: 420px; /* conservative minimum for small screens */
+}
+
+@media (min-width: 768px) {
+  .single-slider {
+    min-height: 520px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .single-slider {
+    min-height: 640px;
+  }
+}
+
+/* ===== ACCESSIBILITY: Focus Indicators ===== */
+/* Visible focus indicators for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+[tabindex]:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Enhanced focus for interactive elements */
+.main-menu a:focus,
+.header-btn a:focus {
+  outline: 3px solid #007bff;
+  outline-offset: 4px;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Focus for social links */
+.social-link:focus,
+.about-social-links .social-link:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+/* Focus for buttons */
+.btn:focus,
+.theme-btn:focus,
+button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+/* Improve readability - don't hide focus outlines */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* ===== IMAGE OPTIMIZATION: Aspect Ratio & Performance ===== */
+/* Ensure all images maintain proper aspect ratios */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Prevent layout shifts for images */
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* Blog images aspect ratio */
+.blog-img img {
+  aspect-ratio: 370 / 250;
+  object-fit: cover;
+}
+
+/* Portfolio images aspect ratio */
+.port-img {
+  aspect-ratio: 400 / 250;
+  object-fit: cover;
+}
+
+/* Modal images aspect ratio */
+.blog-modal-img img {
+  aspect-ratio: 800 / 600;
+  object-fit: cover;
+}
+
+/* Testimonial images */
+.testimonial-img img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Use contain-intrinsic-size for better CLS */
+img[loading="lazy"] {
+  content-visibility: auto;
 }

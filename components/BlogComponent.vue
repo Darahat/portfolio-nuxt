@@ -35,6 +35,8 @@
                   :src="post.image"
                   :alt="post.title"
                   loading="lazy"
+                  width="370"
+                  height="250"
                 />
               </div>
               <div class="single-blog-content bg-white pl-30 pt-25 pb-15 pr-30">
@@ -69,9 +71,13 @@
                   </li>
                 </ul>
                 <h3 class="mb-10 mt-1">
-                  <a class="primary-hover" :href="post.link" target="_blank">{{
-                    post.title
-                  }}</a>
+                  <a
+                    class="primary-hover"
+                    :href="post.link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >{{ post.title }}</a
+                  >
                 </h3>
               </div>
             </div>

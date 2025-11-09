@@ -10,6 +10,8 @@
                   <img
                     src="/images/logo/darahat-full-stack-developer-logo.webp"
                     alt="Didarul Alam Rahat Logo"
+                    width="160"
+                    height="48"
                   />
                 </NuxtLink>
               </div>
@@ -18,7 +20,11 @@
               class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-7 pl-0 d-flex justify-content-end align-items-center"
             >
               <div class="main-menu">
-                <nav id="mobile-menu">
+                <nav
+                  id="mobile-menu"
+                  role="navigation"
+                  aria-label="Main navigation"
+                >
                   <ul class="d-block">
                     <li><a class="active" href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -29,11 +35,12 @@
                   </ul>
                 </nav>
               </div>
-              <div class="header-btn pl-45">
+              <div class="header-btn pl-45" style="min-width: 120px">
                 <a
                   href="/Files/darahat.pdf"
                   download
                   class="white-text text-uppercase d-inline-block"
+                  style="font-size: 1rem; line-height: 1.2"
                 >
                   Download CV
                 </a>
