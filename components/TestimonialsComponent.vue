@@ -158,45 +158,47 @@ useHead({
 .testimonial-bg {
   padding-top: 140px;
   padding-bottom: 90px;
-}
-.testimonial-bg::before {
-  display: none;
-}
-.testimonial-area {
-  background: var(--section-bg);
-}
-.testimonial-text {
-  font-size: 17px;
-  line-height: 1.5;
-}
-.testimonial-active {
-  padding-left: 50px;
-  padding-right: 0;
-}
-.testimonial-img {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
-  width: auto;
-  margin-top: 40px;
-}
-.testimonial-wrapper {
-  margin-top: 40px;
-}
-/* 🧩 Fix Swiper layout issues */
-.swiper-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.testi-item {
-  max-width: 500px;
-  margin: 0 auto;
+  .testimonial-bg::before {
+    display: none;
+  }
+  .testimonial-area {
+    background: var(--section-bg);
+  }
+  .testimonial-text {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .testimonial-active {
+    padding-left: 50px;
+    padding-right: 0;
+  }
+  .testimonial-img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    width: auto;
+    margin-top: 40px;
+  }
+  .testimonial-wrapper {
+    margin-top: 40px;
+  }
+  /* 🧩 Fix Swiper layout issues */
+  .swiper-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .testi-item {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Add extra top margin for swiper pagination bullets to prevent overlap with image */
 }
 </style>

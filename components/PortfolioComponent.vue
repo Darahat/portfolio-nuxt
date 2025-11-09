@@ -128,41 +128,66 @@ const closeModal = () => {
 </script>
 
 <style scoped>
-/* Portfolio Component Styles */
-.portfolio-area {
-  overflow: hidden;
-}
-
+/* Marquee Styles */
 .marquee-w {
   overflow: hidden;
   margin-bottom: 125px;
+  position: relative;
 }
 
 .marquee {
   display: flex;
-  animation: marquee 20s linear infinite;
   white-space: nowrap;
-}
-
-.marquee span {
-  font-size: 90px;
-  font-weight: 600;
-  color: #f3f6f8;
-  padding-left: 16px;
+  animation: marquee-left 20s linear infinite;
+  margin: auto;
 }
 
 .marquee2 {
-  animation-direction: reverse;
-  padding-bottom: 4px;
+  display: flex;
+  white-space: nowrap;
+  animation: marquee-right 20s linear infinite;
 }
 
-@keyframes marquee {
+.marquee span {
+  font-size: 96px;
+  font-weight: 600;
+  color: #000000;
+  padding-left: 16px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.marquee2 span {
+  -webkit-text-stroke: 0.1px #7c7b7b;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: marquee2 20s linear infinite;
+  text-transform: uppercase;
+}
+
+/* Keyframes for moving left */
+@keyframes marquee-left {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* Keyframes for moving right */
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Portfolio Component Styles */
+.portfolio-area {
+  overflow: hidden;
 }
 
 .portfolio-wrapper {

@@ -66,40 +66,98 @@ import SkillCircle from "~/components/SkillCircle.vue";
 </script>
 
 <style scoped>
-/* Your previous styles remain unchanged */
-/* Ensure skill circles wrap and don't squeeze */
-.skill-area {
-  overflow: hidden;
-  position: relative;
-}
-.row.justify-content-center {
-  flex-wrap: wrap;
-}
+/* Marquee Styles */
 .marquee-w {
   overflow: hidden;
   margin-bottom: 125px;
+  position: relative;
 }
+
 .marquee {
   display: flex;
-  animation: marquee 20s linear infinite;
   white-space: nowrap;
+  animation: marquee-left 20s linear infinite;
+  margin: auto;
 }
-.marquee span {
-  font-size: 90px;
-  font-weight: 600;
-  color: #f3f6f8;
-  padding-left: 16px;
-}
+
 .marquee2 {
-  animation-direction: reverse;
-  padding-bottom: 4px;
+  display: flex;
+  white-space: nowrap;
+  animation: marquee-right 20s linear infinite;
 }
-@keyframes marquee {
+
+.marquee span {
+  font-size: 96px;
+  font-weight: 600;
+  color: #000000;
+  padding-left: 16px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.marquee2 span {
+  -webkit-text-stroke: 0.1px #7c7b7b;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: marquee2 20s linear infinite;
+  text-transform: uppercase;
+}
+
+/* Keyframes for moving left */
+@keyframes marquee-left {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* Keyframes for moving right */
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Skill Area Styles */
+.skill-area {
+  overflow: hidden;
+  position: relative;
+}
+
+.row.justify-content-center {
+  flex-wrap: wrap;
+}
+
+/* Responsive Marquee */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .marquee span {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .marquee span {
+    font-size: 60px;
+  }
+  .marquee-w {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .marquee span {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .marquee span {
+    font-size: 28px;
   }
 }
 </style>
