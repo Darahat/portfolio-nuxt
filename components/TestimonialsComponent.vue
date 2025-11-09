@@ -1,7 +1,7 @@
 <template>
   <div class="testimonial-area position-relative over-hidden">
-    <div class="container">
-      <div class="testimonial-bg section-bg pt-170 pb-170 position-relative">
+    <div class="testimonial-bg section-bg pt-170 pb-170 position-relative">
+      <div class="container">
         <div class="row align-items-start justify-content-center">
           <!-- LEFT SECTION -->
           <div class="col-xl-7 col-lg-7 col-md-12">
@@ -20,10 +20,6 @@
                   class="theme-color"
                   :src="testimonialIcon"
                   alt="Quotation icon"
-                  width="48"
-                  height="48"
-                  srcset="/images/testimonial/testimonial-icon.webp 48w"
-                  sizes="48px"
                   loading="lazy"
                 />
               </div>
@@ -59,10 +55,6 @@
                         <img
                           :src="testimonial.image"
                           :alt="`${testimonial.clientName} - ${testimonial.workTitle}`"
-                          width="80"
-                          height="80"
-                          srcset="/images/testimonial/testimonial-img.webp 80w"
-                          sizes="80px"
                           loading="lazy"
                           itemprop="image"
                         />
@@ -106,10 +98,6 @@
                 class="border-radius10"
                 :src="testimonialsImg"
                 alt="Happy clients sharing testimonials"
-                width="320"
-                height="320"
-                srcset="/images/testimonial/testimonial-img.webp 320w"
-                sizes="320px"
                 loading="lazy"
               />
             </div>
@@ -122,7 +110,10 @@
 <script setup>
 import { useHead } from "#imports";
 import "swiper/css";
+import "swiper/css/autoplay";
 import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/vue";
 import { testimonials } from "~/data/testimonials.js";
 import testimonialIcon from "/images/testimonial/testimonial-icon.webp";
 import testimonialsImg from "/images/testimonial/testimonial-img.webp";
@@ -163,6 +154,35 @@ useHead({
 });
 </script>
 <style scoped>
+/* Testimonial Styles migrated from global.css and backup */
+.testimonial-bg {
+  padding-top: 140px;
+  padding-bottom: 90px;
+}
+.testimonial-bg::before {
+  display: none;
+}
+.testimonial-area {
+  background: var(--section-bg);
+}
+.testimonial-text {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.testimonial-active {
+  padding-left: 50px;
+  padding-right: 0;
+}
+.testimonial-img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  width: auto;
+  margin-top: 40px;
+}
+.testimonial-wrapper {
+  margin-top: 40px;
+}
 /* 🧩 Fix Swiper layout issues */
 .swiper-container {
   width: 100%;

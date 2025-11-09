@@ -216,7 +216,7 @@ main.over-hiddenn {
 
 /* Header logo: explicit sizing to avoid layout shift while fonts and assets load */
 .header-logo img {
-  width: 160px; /* default desktop width */
+  width: 60px; /* default desktop width */
   max-width: 100%;
   height: auto;
   display: block;
@@ -224,7 +224,7 @@ main.over-hiddenn {
 
 @media (max-width: 991px) {
   .header-logo img {
-    width: 140px;
+    width: 40px;
   }
 }
 

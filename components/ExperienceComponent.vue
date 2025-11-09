@@ -140,3 +140,185 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+/* Experience Component Styles */
+.experience-area {
+  overflow: hidden;
+}
+
+.experience-wrapper {
+  position: relative;
+}
+
+.experience-bg-img {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.experience-margin {
+  margin-top: 160px;
+  padding-bottom: 80px;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+
+.title h2 {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.title span {
+  color: var(--meta-text-color, #000000);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: -5px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.experience-content {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 25px;
+}
+
+.experience-content li {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.experience-ser-icon {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 30px;
+  background: transparent;
+  border: 1px solid var(--secondary-color, #d9e1e2);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  flex-shrink: 0;
+}
+
+.experience-content li:hover .experience-ser-icon {
+  background: var(--main-color, #25262f);
+}
+
+.experience-ser-icon span {
+  font-size: 35px;
+  color: var(--main-color, #25262f);
+}
+
+.experience-content li:hover .experience-ser-icon span {
+  color: var(--primary-color, #ffffff);
+}
+
+.rotate-hover:hover .rotate {
+  transform: rotateY(360deg);
+}
+
+.rotate {
+  transition: transform 0.6s ease;
+}
+
+.experience-service-text {
+  display: inline-block;
+}
+
+.experience-service-text h3 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.experience-service-text h4 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.experience-service-text h4 span {
+  font-size: 15px;
+}
+
+.experience-service-text p {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+/* Responsive */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .experience-margin {
+    margin-right: 0;
+    padding-left: 50px;
+  }
+  .experience-service-text h3 {
+    font-size: 25px;
+  }
+  .experience-service-text h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .experience-bg-img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+  .experience-margin {
+    margin-top: 0;
+    padding-left: 0;
+    padding-bottom: 40px;
+  }
+  .title h2 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .experience-bg-img {
+    height: 300px;
+  }
+  .experience-ser-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 20px;
+  }
+  .experience-ser-icon span {
+    font-size: 28px;
+  }
+  .experience-service-text h3 {
+    font-size: 22px;
+  }
+  .experience-service-text h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .experience-bg-img {
+    height: 200px;
+  }
+  .title h2 {
+    font-size: 28px;
+  }
+  .experience-service-text h3 {
+    font-size: 20px;
+  }
+}
+</style>

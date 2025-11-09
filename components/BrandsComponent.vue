@@ -59,6 +59,10 @@
 import { ref } from "vue";
 
 import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/vue";
 
 const brands = ref([
   {
@@ -104,3 +108,73 @@ const brands = ref([
   },
 ]);
 </script>
+
+<style scoped>
+/* Brands Component Styles */
+.brand-area {
+  overflow: hidden;
+}
+
+.brand-height {
+  min-height: auto;
+}
+
+.brand-active {
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
+
+.single-brand {
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.single-brand img {
+  display: inline-block;
+  max-width: 120px;
+  height: auto;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.single-brand:hover img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.theme-border-bottom {
+  border-bottom: 1px solid var(--main-border, #bcc7d3);
+}
+
+.swiper-placeholder {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--text-color, #4d4d5c);
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+  .brand-active {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .brand-active {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .single-brand img {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .single-brand img {
+    max-width: 80px;
+  }
+}
+</style>

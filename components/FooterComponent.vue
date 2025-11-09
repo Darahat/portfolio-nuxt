@@ -145,3 +145,134 @@ const handleNewsletter = () => {
   }
 };
 </script>
+
+<style scoped>
+/* Footer Component Styles */
+.footer-area {
+  overflow: hidden;
+}
+
+.footer-widget {
+  padding-bottom: 40px;
+}
+
+.foot-logo img {
+  max-width: 120px;
+  margin-bottom: 30px;
+}
+
+.copyright-text p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.c-theme {
+  color: var(--main-color, #25262f);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.c-theme:hover {
+  text-decoration: underline;
+}
+
+.footer-widget h4 {
+  margin-bottom: 28px;
+  margin-top: 2px;
+  font-size: 24px;
+}
+
+.social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social li {
+  margin-right: 8px;
+}
+
+.social.social-bg li a {
+  font-size: 18px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.twitter-bg,
+.facebook-bg {
+  background: #1da1f2;
+}
+
+.linkedin-bg {
+  background: #0077b5;
+}
+
+.instagram-bg {
+  background: #333;
+}
+
+.rotate-hover:hover .rotate {
+  transform: rotateY(360deg);
+}
+
+.rotate {
+  transition: transform 0.6s ease;
+}
+
+.newsletter-form .subscribe-info {
+  position: relative;
+}
+
+.newsletter-form label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.subscribe-info input {
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  width: 100%;
+  border: 1px solid var(--main-border, #bcc7d3);
+  border-radius: 5px;
+  background: #ffffff;
+  color: var(--secondary-color, #d9e1e2);
+}
+
+.subscribe-info span {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main-color, #25262f);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .footer-widget {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .social {
+    justify-content: center;
+  }
+}
+</style>

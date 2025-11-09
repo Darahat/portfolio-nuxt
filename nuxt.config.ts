@@ -7,18 +7,11 @@ export default defineNuxtConfig({
   plugins: ["~/plugins/seo-schema.ts", "~/plugins/aos.client.ts"],
 
   css: [
-    "~/assets/css/bootstrap.min.css",
-    "~/assets/css/fontawesome-all.min.css",
-    "~/assets/css/flaticon.css",
-    "~/assets/css/animate.css",
-    "~/assets/css/jquery.fancybox.min.css",
-    "~/assets/css/slick.css",
-    "~/assets/css/leaflet.css",
-    "~/assets/css/meanmenu.css",
-    "~/assets/css/default.css",
-    "~/assets/css/style.css",
-    "~/assets/css/responsive.css",
-    "~/assets/css/custom.css",
+    "~/assets/css/bootstrap.min.css", // Bootstrap grid system (CSS-only, no JS)
+    "~/assets/css/fontawesome-all.min.css", // Font Awesome icons
+    "~/assets/css/flaticon.css", // Flaticon custom icons
+    "~/assets/css/animate.css", // Animation utilities
+    "~/assets/css/global.css", // Global styles (typography, variables, utilities, fonts, accessibility)
   ],
 
   app: {
@@ -39,55 +32,6 @@ export default defineNuxtConfig({
           href: "/images/slider/slider-bg.webp",
           fetchpriority: "high",
         },
-        {
-          rel: "preconnect",
-          href: "https://code.jquery.com",
-          crossorigin: "anonymous",
-        },
-        {
-          rel: "dns-prefetch",
-          href: "https://code.jquery.com",
-        },
-        // Preload critical fonts
-        {
-          rel: "preload",
-          as: "font",
-          href: "/assets/fonts/fa-solid-900.woff2",
-          type: "font/woff2",
-          crossorigin: "anonymous",
-        },
-      ],
-      script: [
-        // Load jQuery async - it's not needed for initial render
-        {
-          src: "https://code.jquery.com/jquery-3.6.0.min.js",
-          tagPosition: "bodyClose",
-          async: true,
-        },
-        { src: "/js/popper.min.js", tagPosition: "bodyClose", async: true },
-        { src: "/js/bootstrap.min.js", tagPosition: "bodyClose", async: true },
-        {
-          src: "/js/jquery.fancybox.min.js",
-          tagPosition: "bodyClose",
-          async: true,
-        },
-        { src: "/js/slick.min.js", tagPosition: "bodyClose", async: true },
-        {
-          src: "/js/jquery.meanmenu.min.js",
-          tagPosition: "bodyClose",
-          async: true,
-        },
-        { src: "/js/jquery-knob.js", tagPosition: "bodyClose", async: true },
-        { src: "/js/jquery-appear.js", tagPosition: "bodyClose", async: true },
-        { src: "/js/parallax.js", tagPosition: "bodyClose", async: true },
-        { src: "/js/typer.js", tagPosition: "bodyClose", async: true },
-        {
-          src: "/js/vanilla-tilt.min.js",
-          tagPosition: "bodyClose",
-          async: true,
-        },
-        // Main.js must load last but async
-        { src: "/js/main.js", tagPosition: "bodyClose", async: true },
       ],
     },
   },

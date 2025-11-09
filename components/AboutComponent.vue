@@ -7,7 +7,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div
-              class="col-xl-6 col-lg-6 col-md-8 offset-md-0 col-sm-10 col-10"
+              class="col-xl-6 col-lg-6 col-md-8 offset-md-0 col-sm-10 col-10 pr-3 pr-md-4"
             >
               <div class="about-img-wrapper position-relative mb-90">
                 <div
@@ -29,8 +29,6 @@
                         loading="lazy"
                         src="/images/about/rahat-flutter-developer.webp"
                         alt="Didarul Alam Rahat"
-                        width="320"
-                        height="320"
                         style="display: block; max-width: 100%; height: auto"
                       />
                     </div>
@@ -73,7 +71,9 @@
               </div>
             </div>
 
-            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <div
+              class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pl-3 pl-md-4"
+            >
               <div class="about-content position-relative mb-50">
                 <div class="position-relative">
                   <div class="title">
@@ -279,3 +279,228 @@ onMounted(() => {
   // }
 });
 </script>
+
+<style scoped>
+/* About Component Styles */
+.about-area {
+  overflow: hidden;
+}
+
+.about-content-wrapper {
+  position: relative;
+}
+
+.about-img-wrapper {
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.about-img {
+  position: relative;
+  z-index: 11;
+}
+
+.about-img-over {
+  padding-left: 50px;
+  transition: all 0.5s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.about-img-over::after {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  width: 65px;
+  height: 65px;
+  right: -9%;
+  top: 137px;
+  transform: rotate(42deg);
+  z-index: 11;
+}
+
+.about-img-over::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 64px;
+  background: var(--secondary-color, #d9e1e2);
+  right: 55px;
+  bottom: -32px;
+  z-index: 1;
+}
+
+.about-shape1 {
+  width: 133px;
+  height: 134px;
+  border: 4px solid var(--secondary-color, #d9e1e2);
+  right: -25px;
+  top: -25px;
+}
+
+.about-shape2 {
+  background: var(--secondary-color, #d9e1e2);
+  width: 91px;
+  height: 91px;
+  top: 70px;
+  left: -12px;
+}
+
+.about-download-wrapper {
+  left: -75px;
+  bottom: -125px;
+  z-index: 11;
+}
+
+.download-bg {
+  display: inline-block;
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cv-download-link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+.d-icon {
+  display: inline-block;
+}
+
+.about-info-wrapper {
+  border-top: 1px solid var(--main-border, #bcc7d3);
+  border-bottom: 1px solid var(--main-border, #bcc7d3);
+}
+
+.about-content .title h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.about-info li {
+  margin-bottom: 15px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f3f6f8;
+  color: var(--main-color, #25262f);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+.social-link:hover {
+  background: var(--main-color, #25262f);
+  color: #ffffff;
+}
+
+.social-img {
+  object-fit: contain;
+}
+
+/* About social links - compact icons */
+.about-social-links .social-link {
+  color: #333;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: all 0.18s ease;
+  text-decoration: none;
+}
+
+.about-social-links .social-link i {
+  line-height: 1;
+}
+
+.about-social-links .social-link:hover {
+  color: #f9fafb;
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.about-social-links .meta-text-color {
+  font-size: 14px;
+}
+
+.about-social-links .social-img {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  object-fit: contain;
+}
+
+@media (max-width: 575px) {
+  .about-social-links {
+    margin-top: 0.75rem;
+  }
+}
+
+/* Responsive */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-img-wrapper {
+    padding-right: 30px;
+  }
+  .about-download-wrapper {
+    left: -65px;
+    bottom: -110px;
+    max-width: 62%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about-img-over {
+    padding-left: 25px;
+  }
+  .about-download-wrapper {
+    left: -45px;
+    bottom: -90px;
+    max-width: 55%;
+  }
+  .about-img-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-img-over::after {
+    width: 45px;
+    height: 45px;
+    top: 100px;
+  }
+  .about-shape1 {
+    width: 100px;
+    height: 100px;
+  }
+  .about-shape2 {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .about-content .title h2 {
+    font-size: 32px;
+  }
+}
+</style>
