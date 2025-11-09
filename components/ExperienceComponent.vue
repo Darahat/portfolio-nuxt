@@ -1,5 +1,5 @@
 <template>
-  <div class="experience-area over-hidden pb-165">
+  <div class="experience-area over-hidden pt-5">
     <div class="experience-wrapper extra-width position-relative">
       <div
         class="experience-bg-img left-0 top-0 bottom-0 bg-cover no-repeat w-50 position-absolute"
@@ -7,7 +7,9 @@
           backgroundImage:
             'url(/images/work/full-stack-laravel-developer-and-flutter-app-developer-darahat-working.webp)',
         }"
-      />
+      ></div>
+      <!-- Show image as <img> on mobile for visibility -->
+
       <div class="container">
         <div class="row">
           <div class="col-xl-6 col-lg-6 offset-lg-6 col-md-12">
@@ -137,6 +139,12 @@
           </div>
         </div>
       </div>
+      <img
+        class="experience-img-mobile"
+        src="/images/work/full-stack-laravel-developer-and-flutter-app-developer-darahat-working.webp"
+        alt="Full Stack Developer Darahat Working"
+        loading="lazy"
+      />
     </div>
   </div>
 </template>
@@ -158,16 +166,22 @@
   top: 0;
   bottom: 0;
   width: 50%;
+  min-height: 400px;
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.experience-img-mobile {
+  display: none;
 }
 
 .experience-margin {
-  margin-top: 160px;
-  padding-bottom: 80px;
-  padding-left: 100px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  margin-bottom: 30px;
 }
 
 .title h2 {
@@ -273,16 +287,39 @@
 
 @media screen and (max-width: 991px) {
   .experience-bg-img {
-    position: relative;
+    display: none;
+  }
+  .experience-img-mobile {
+    display: block;
     width: 100%;
-    height: 400px;
-    margin-bottom: 40px;
+    height: auto;
     border-radius: 10px;
+    margin-bottom: 24px;
+    margin-top: 20px;
+  }
+  .experience-wrapper .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-xl-6,
+  .col-lg-6,
+  .offset-lg-6,
+  .col-md-12 {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .experience-margin {
     margin-top: 0;
     padding-left: 0;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
   }
   .title h2 {
     font-size: 36px;
@@ -291,34 +328,48 @@
 
 @media screen and (max-width: 767px) {
   .experience-bg-img {
-    height: 300px;
+    min-height: 160px;
+    height: 160px;
   }
   .experience-ser-icon {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin-right: 12px;
   }
   .experience-ser-icon span {
-    font-size: 28px;
-  }
-  .experience-service-text h3 {
     font-size: 22px;
   }
+  .experience-service-text h3 {
+    font-size: 18px;
+  }
   .experience-service-text h4 {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 575px) {
   .experience-bg-img {
-    height: 200px;
+    min-height: 120px;
+    height: 120px;
   }
   .title h2 {
-    font-size: 28px;
+    font-size: 22px;
   }
   .experience-service-text h3 {
-    font-size: 20px;
+    font-size: 17px;
+  }
+  .experience-service-text h4 {
+    font-size: 13px;
+  }
+  .experience-service-text p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .experience-img-mobile {
+    display: none;
   }
 }
 </style>

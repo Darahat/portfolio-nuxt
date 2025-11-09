@@ -522,24 +522,58 @@ span#main {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .slider-content h1,
-  .slider-content h1 span {
-    font-size: 48px;
+/* Medium screens: 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-social-link {
+    position: fixed; /* keep it floating */
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 48px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 11;
+    background: none; /* remove background for medium screens */
+    border-radius: 0;
+    padding: 0;
   }
-  .slider-content .sub-heading {
-    font-size: 18px;
-    letter-spacing: 3px;
+
+  .slider-social-link .social {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .slider-social-link .social li {
+    width: 48px;
+    height: 48px;
+    margin: 4px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(204, 211, 217, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    overflow: hidden;
+  }
+
+  .slider-social-link .social li a {
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    text-align: center;
+    display: block;
+    color: var(--primary-color, #ffffff);
+  }
+
+  /* Add bottom spacing to slider content so text won't overlap icons */
+  .slider-content {
+    margin-right: 70px; /* leave space for floating social icons */
   }
 }
 
-@media screen and (max-width: 575px) {
-  .slider-content h1,
-  .slider-content h1 span {
-    font-size: 36px;
-  }
-  .slider-content h2 {
-    font-size: 18px;
-  }
-}
+/* Fix: Ensure style block is properly closed */
 </style>

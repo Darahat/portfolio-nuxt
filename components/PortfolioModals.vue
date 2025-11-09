@@ -30,7 +30,7 @@
                 width="800"
                 height="600"
                 srcset="
-                  /images/portfolio/sensorlab-flutter-android-app-development-darahat.webp 800w
+                  /images/portfolio/sensorlab-flutter-android-app-development-large-darahat.webp 800w
                 "
                 sizes="(max-width: 600px) 100vw, 800px"
               />
@@ -392,6 +392,9 @@ import portImg2Large from "/images/portfolio/the-network-tap-frontend-developmen
 }
 
 .modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   position: relative;
   display: flex;
   flex-direction: column;
