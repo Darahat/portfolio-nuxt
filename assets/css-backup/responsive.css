@@ -527,7 +527,8 @@
     margin-top: 70px;
     margin-bottom: 65px;
   }
-  .slider-content h1, .slider-content h1 span {
+  .slider-content h1,
+  .slider-content h1 span {
     font-size: 130px;
     line-height: 0.9;
     margin-bottom: 25px;
@@ -994,7 +995,8 @@
     padding-right: 0;
     margin-bottom: 45px;
   }
-  .slider-content h1, .slider-content h1 span {
+  .slider-content h1,
+  .slider-content h1 span {
     font-size: 72px;
     margin-bottom: 18px;
   }
@@ -1514,7 +1516,8 @@
 
 /* SM Small Device :550px. */
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .slider-content h1, .slider-content h1 span {
+  .slider-content h1,
+  .slider-content h1 span {
     font-size: 120px;
   }
   .about-footer-content-right {
@@ -1674,7 +1677,8 @@
 
 /* SM Small Device :550px. */
 @media screen and (min-width: 500px) and (max-width: 576px) {
-  .slider-content h1, .slider-content h1 span {
+  .slider-content h1,
+  .slider-content h1 span {
     font-size: 90px;
     padding: 0 30px;
   }

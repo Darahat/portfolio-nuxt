@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted, ref } from "vue";
 
 const props = defineProps({
   target: {
@@ -60,9 +60,8 @@ onMounted(() => {
   onUnmounted(unwatch);
 });
 
-
 onMounted(() => {
-  if (!('IntersectionObserver' in window)) {
+  if (!("IntersectionObserver" in window)) {
     // Fallback for older browsers
     animatedValue.value = props.target;
     return;
@@ -99,3 +98,38 @@ onUnmounted(() => {
   }
 });
 </script>
+
+<style scoped>
+/* Counter Component Styles */
+span {
+  font-size: 72px;
+  line-height: 0.4;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Responsive */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  span {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  span {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  span {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  span {
+    font-size: 42px;
+  }
+}
+</style>

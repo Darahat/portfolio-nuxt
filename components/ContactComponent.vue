@@ -32,6 +32,7 @@
                       <a
                         href="https://www.linkedin.com/in/darahat/"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="text-dark hover-underline d-block"
                       >
                         Connect on LinkedIn
@@ -95,3 +96,131 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+/* Contact Component Styles */
+.contact-area {
+  overflow: hidden;
+}
+
+.contact-wrapper {
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.meta-text-color {
+  color: var(--meta-text-color, #000000);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.professional-contact-cards {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.bg-linkedin {
+  background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
+}
+
+.bg-email {
+  background: linear-gradient(135deg, #ea4335 0%, #fbbc05 100%);
+}
+
+.bg-fiverr {
+  background: linear-gradient(135deg, #1dbf73 0%, #00b22d 100%);
+}
+
+.contact-details h5 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.contact-details a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .title h2 {
+    font-size: 32px;
+  }
+  .professional-contact-cards {
+    padding: 20px;
+  }
+  .contact-card {
+    padding: 15px !important;
+  }
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div class="testimonial-area position-relative over-hidden">
-    <div class="container">
-      <div class="testimonial-bg section-bg pt-170 pb-170 position-relative">
+    <div class="testimonial-bg section-bg pt-170 pb-170 position-relative">
+      <div class="container">
         <div class="row align-items-start justify-content-center">
           <!-- LEFT SECTION -->
           <div class="col-xl-7 col-lg-7 col-md-12">
@@ -110,10 +110,13 @@
 <script setup>
 import { useHead } from "#imports";
 import "swiper/css";
+import "swiper/css/autoplay";
 import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/vue";
 import { testimonials } from "~/data/testimonials.js";
 import testimonialIcon from "/images/testimonial/testimonial-icon.webp";
-import testimonialsImg from "/images/testimonial/testimonials-img.webp";
+import testimonialsImg from "/images/testimonial/testimonial-img.webp";
 
 /* ✅ Generate structured data dynamically */
 const schema = JSON.stringify(
@@ -151,20 +154,51 @@ useHead({
 });
 </script>
 <style scoped>
-/* 🧩 Fix Swiper layout issues */
-.swiper-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.testi-item {
-  max-width: 500px;
-  margin: 0 auto;
+/* Testimonial Styles migrated from global.css and backup */
+.testimonial-bg {
+  padding-top: 140px;
+  padding-bottom: 90px;
+  .testimonial-bg::before {
+    display: none;
+  }
+  .testimonial-area {
+    background: var(--section-bg);
+  }
+  .testimonial-text {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .testimonial-active {
+    padding-left: 50px;
+    padding-right: 0;
+  }
+  .testimonial-img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    width: auto;
+    margin-top: 40px;
+  }
+  .testimonial-wrapper {
+    margin-top: 40px;
+  }
+  /* 🧩 Fix Swiper layout issues */
+  .swiper-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .testi-item {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Add extra top margin for swiper pagination bullets to prevent overlap with image */
 }
 </style>

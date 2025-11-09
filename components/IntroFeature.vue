@@ -2,7 +2,7 @@
   <div class="intro-feature-area over-hidden position-relative section-bg">
     <div class="container">
       <div
-        class="row single-intro-feature-wrapper justify-content-center pt-170 pb-140"
+        class="row single-intro-feature-wrapper justify-content-center pt-70 pb-40"
       >
         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-9 col-11">
           <div
@@ -106,12 +106,142 @@
 </template>
 
 <script setup>
+import VanillaTilt from "vanilla-tilt";
 import { onMounted } from "vue";
 
 onMounted(() => {
-  if (import.meta.client && window.VanillaTilt) {
+  if (import.meta.client) {
     const elements = document.querySelectorAll("[data-tilt]");
     VanillaTilt.init(elements, { max: 10, speed: 400 });
   }
 });
 </script>
+
+<style scoped>
+/* Intro Feature Component Styles */
+.intro-feature-area {
+  overflow: hidden;
+  position: relative;
+  background: var(--section-bg, #f3f6f8);
+}
+
+.section-bg {
+  background: var(--section-bg, #f3f6f8);
+}
+
+.single-intro-feature-wrapper {
+  padding-top: 170px;
+  padding-bottom: 140px;
+}
+
+.single-intro-feature-content {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 55px 48px 35px 48px;
+  transition: all 0.5s ease;
+  box-shadow: 0px 5px 60px 0px rgba(2, 24, 93, 0.08);
+  margin-bottom: 30px;
+}
+
+.single-intro-feature-content:hover {
+  box-shadow: 0px 5px 60px 0px rgba(2, 24, 93, 0.15);
+}
+
+.white-bg {
+  background: #ffffff;
+}
+
+.border-radius10 {
+  border-radius: 10px;
+}
+
+.intro-feature-margin {
+  margin-top: 60px;
+}
+
+.intro-ft-icon {
+  display: inline-block;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+}
+
+.intro-ft-icon img {
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.intro-feature-text h4 {
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.intro-feature-text p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-intro-feature-content {
+    padding: 30px 20px 10px 20px;
+  }
+  .intro-ft-icon img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .intro-ft-icon {
+    margin-bottom: 22px;
+  }
+  .single-intro-feature-content h4 {
+    margin-bottom: 15px;
+  }
+  .single-intro-feature-content p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .single-intro-feature-wrapper {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .single-intro-feature-content {
+    padding: 40px 30px;
+  }
+  .intro-feature-margin {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .single-intro-feature-wrapper {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .single-intro-feature-content {
+    padding: 30px 20px;
+  }
+  .intro-feature-text h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .intro-ft-icon img {
+    max-width: 48px;
+    max-height: 48px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .single-intro-feature-wrapper {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .intro-feature-text h4 {
+    font-size: 18px;
+  }
+  .intro-feature-text p {
+    font-size: 15px;
+  }
+}
+</style>

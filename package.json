@@ -18,16 +18,17 @@
     "aos": "^2.3.4",
     "better-sqlite3": "^12.4.1",
     "eslint": "^9.39.1",
-    "jquery": "^3.7.1",
-    "leaflet": "^1.9.4",
     "nuxt": "^4.2.0",
-    "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.26.3",
     "swiper": "^12.0.3",
+    "vanilla-tilt": "^1.8.1",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
-    "sass": "^1.93.3"
+    "lightningcss": "^1.30.2",
+    "sass": "^1.93.3",
+    "terser": "^5.44.1",
+    "vite-plugin-compression": "^0.5.1"
   }
 }

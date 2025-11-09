@@ -14,7 +14,7 @@
     </div>
 
     <HeaderComponent />
-    <main class="over-hiddenn">
+    <main id="main-content" role="main" class="over-hiddenn">
       <HeroComponent />
       <IntroFeature />
       <AboutComponent />
