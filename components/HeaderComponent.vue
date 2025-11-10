@@ -37,7 +37,7 @@
               </div>
               <div class="header-btn pl-45" style="min-width: 120px">
                 <a
-                  href="/Files/darahat.pdf"
+                  href="/Files/didarul-alam-rahat-remote-full-stack-developer-cv.pdf"
                   download
                   class="white-text text-uppercase d-inline-block"
                   style="font-size: 1rem; line-height: 1.2"
@@ -54,21 +54,34 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
+import { onBeforeUnmount, onMounted } from "vue";
+
+let heroHeight = 0;
 
 onMounted(() => {
-  // Initialize sticky header
-  if (import.meta.client) {
-    window.addEventListener("scroll", handleScroll);
-  }
+  // Get hero area height (assume #hero exists)
+  const hero = document.getElementById("hero");
+  heroHeight = hero ? hero.offsetHeight : 400;
+  window.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", handleScroll);
 });
 
 const handleScroll = () => {
   const header = document.getElementById("header-sticky");
+  if (!header) return;
   if (window.scrollY > 100) {
-    header?.classList.add("sticky");
+    header.classList.add("sticky");
+    if (window.scrollY > heroHeight - 60) {
+      header.classList.add("dark-bg");
+    } else {
+      header.classList.remove("dark-bg");
+    }
   } else {
-    header?.classList.remove("sticky");
+    header.classList.remove("sticky");
+    header.classList.remove("dark-bg");
   }
 };
 </script>
@@ -197,9 +210,12 @@ const handleScroll = () => {
   transition: all 0.3s ease;
 }
 
-.header-btn a:hover {
-  background: var(--primary-color, #ffffff);
-  color: var(--main-color, #25262f);
+.header-btn a:hover,
+#header-sticky.sticky .header-btn a:hover,
+#header-sticky.sticky.dark-bg .header-btn a:hover,
+#header-sticky .header-btn a:hover {
+  background: var(--primary-color, #ffffff) !important;
+  color: #181a1b !important;
 }
 
 /* Sticky Header */
@@ -213,6 +229,12 @@ const handleScroll = () => {
 
 #header-sticky.sticky .header {
   background: transparent;
+  box-shadow: 0 8px 4px -7px rgba(115, 115, 115, 0.1);
+  transition: background 0.3s;
+}
+
+#header-sticky.sticky.dark-bg .header {
+  background: #181a1b;
   box-shadow: 0 8px 4px -7px rgba(115, 115, 115, 0.1);
 }
 
@@ -234,6 +256,11 @@ const handleScroll = () => {
 
 #header-sticky.sticky .header-btn a {
   padding: 8px 20px 7px 20px;
+}
+
+#header-sticky.sticky.dark-bg .main-menu ul li > a,
+#header-sticky.sticky.dark-bg .header-btn a {
+  color: #fff !important;
 }
 
 /* Responsive */

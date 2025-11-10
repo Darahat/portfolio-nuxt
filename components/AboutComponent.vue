@@ -54,7 +54,7 @@
                         loading="lazy"
                       />
                       <a
-                        href="/Files/2yrs_rahat.pdf"
+                        href="/Files/didarul-alam-rahat-remote-full-stack-developer-cv.pdf"
                         download
                         class="cv-download-link transition5"
                       >
@@ -115,45 +115,6 @@
                   <strong>freelance AI integration developer</strong>, let's
                   connect!
                 </p>
-
-                <div class="about-info-wrapper pt-25 pb-20 mt-25">
-                  <div class="row">
-                    <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 col-12">
-                      <ul class="about-info">
-                        <li class="d-inline-block pr-30">
-                          <p class="jostMedium-font-family mb-6">Name</p>
-                          <p class="jostMedium-font-family mb-6">Age</p>
-                          <p class="jostMedium-font-family mb-6">Occupation</p>
-                        </li>
-                        <li class="d-inline-block">
-                          <p class="mb-6">Didarul Alam Rahat</p>
-                          <p class="mb-6">31 Years</p>
-                          <p class="mb-6">Senior Software Engineer</p>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 col-12">
-                      <ul class="about-info">
-                        <li class="d-inline-block pr-30">
-                          <p class="jostMedium-font-family mb-6">Phone</p>
-                          <p class="jostMedium-font-family mb-6">Email</p>
-                          <p class="jostMedium-font-family mb-6">Nationality</p>
-                        </li>
-                        <li class="d-inline-block">
-                          <p class="mb-6">
-                            <a href="tel:+8801765849345">+8801765849345</a>
-                          </p>
-                          <p class="mb-6">
-                            <a href="mailto:darahat42@gmail.com"
-                              >darahat42@gmail.com</a
-                            >
-                          </p>
-                          <p class="mb-6">Bangladeshi</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
 
                 <div
                   class="about-footer-content d-sm-flex align-items-center mt-lg-2 mt-sm-4 mt-3"
