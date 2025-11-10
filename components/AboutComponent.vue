@@ -82,38 +82,39 @@
                       >About Me</span
                     >
                     <h2 class="mb-30">
-                      I build AI-powered Flutter and Web Apps — from
-                      Architecture to Deployment.
+                      Full Stack Web & Mobile App Developer — Laravel, Vue.js,
+                      Nuxt.js, Flutter (Android/iOS)
                     </h2>
                     <p class="mb-25" style="font-style: italic; color: #555">
-                      I’m Rahat — a Full Stack Web, Flutter, and Web3 Developer
-                      with experience in AWS and DevOps.
+                      I’m Rahat — a Full Stack Web Developer (Laravel, Vue.js,
+                      Nuxt.js) and Mobile App Developer (Flutter for
+                      Android/iOS), with experience in AWS, DevOps, and Web3. I
+                      build modern websites, web apps, and cross-platform mobile
+                      apps for remote clients and startups.
                     </p>
                   </div>
                 </div>
                 <p class="mb-25">
                   I'm <strong>Didarul Alam Rahat</strong>, a
-                  <strong>Full Stack Web, Flutter, and Web3 Developer</strong>
-                  with experience in
-                  <strong>Nuxt.js, Laravel, AWS, and DevOps</strong>. With over
-                  7 years of experience in
-                  <strong>mobile and web application development</strong>, I
-                  specialize in <strong>Flutter (Android & iOS)</strong>,
-                  <strong>Laravel</strong>, and
-                  <strong>Nuxt.js</strong> frameworks. Available for remote
-                  projects and freelance work.
+                  <strong>Full Stack Web Developer</strong> (Laravel, Vue.js,
+                  Nuxt.js) and <strong>Mobile App Developer</strong> (Flutter
+                  for Android & iOS) with experience in
+                  <strong>AWS, DevOps, and Web3</strong>. Over 7 years, I've
+                  built scalable web platforms, business websites, and
+                  cross-platform mobile apps for clients worldwide. I specialize
+                  in remote projects and freelance work.
                 </p>
                 <p class="mb-25">
                   I'm passionate about
                   <strong
-                    >clean code, project architecture, planning, and project
+                    >clean code, scalable architecture, and project
                     management</strong
-                  >. I believe great software starts with a strong foundation —
-                  combining technical precision with thoughtful design. If
-                  you're looking to
-                  <strong>hire a remote full stack developer</strong> or
-                  <strong>freelance AI integration developer</strong>, let's
-                  connect!
+                  >. My approach combines technical precision with thoughtful
+                  design. If you're looking to
+                  <strong>hire a remote full stack web developer</strong>
+                  (Laravel, Vue.js, Nuxt.js) or
+                  <strong>mobile app developer</strong> (Flutter), let's connect
+                  and build something great together!
                 </p>
 
                 <div

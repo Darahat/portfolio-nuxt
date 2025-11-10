@@ -7,9 +7,9 @@
     <div class="marquee-w mb-125">
       <div class="marquee">
         <span class="pl-4"
-          >Laravel + Vue.js Web Developer from Bangladesh *</span
+          >Full Stack Web Developer (Laravel, Vue.js, Nuxt.js) *</span
         >
-        <span class="pl-4">Flutter App Developer from Bangladesh *</span>
+        <span class="pl-4">Flutter Mobile App Developer (Android/iOS) *</span>
       </div>
       <div class="marquee marquee2 pb-1">
         <span class="pl-4"
@@ -29,14 +29,15 @@
             <span class="meta-text-color text-uppercase d-block mb-6"
               >My Skill</span
             >
-            <h2 class="mb-25">Growing Over Time</h2>
+            <h2 class="mb-25">My Core Skills</h2>
             <p>
-              My coding journey began at university, where I delved into Java
-              and started building projects. Intrigued by web development, I
-              took my first steps with HTML, CSS, JavaScript, and Bootstrap. In
-              2018, I embraced Vue.js, collaborating on several applications.
-              Subsequently, I expanded my skills into PHP Laravel for backend
-              development and Flutter for app development.
+              I specialize in building modern websites and web apps using
+              <strong>Laravel</strong> (backend), <strong>Vue.js</strong> and
+              <strong>Nuxt.js</strong> (frontend). For mobile, I develop
+              cross-platform apps for <strong>Android</strong> and
+              <strong>iOS</strong> using <strong>Flutter</strong>. My experience
+              covers full stack development, DevOps, and project management for
+              remote clients and startups.
             </p>
           </div>
         </div>
@@ -50,10 +51,10 @@
           <div class="row justify-content-center mt-10">
             <SkillCircle title="Front-End Development" :percentage="80" />
             <SkillCircle title="Back-End Development" :percentage="95" />
-            <SkillCircle title="Database" :percentage="90" />
-            <SkillCircle title="DevOps" :percentage="75" />
-            <SkillCircle title="Flutter App Development" :percentage="75" />
-            <SkillCircle title="Project Management" :percentage="70" />
+            <SkillCircle title="Mobile Development" :percentage="85" />
+            <SkillCircle title="DevOps and CI/CD" :percentage="75" />
+            <SkillCircle title="API Design" :percentage="90" />
+            <SkillCircle title="Blockchain/Web3" :percentage="55" />
           </div>
         </div>
       </div>

@@ -74,18 +74,18 @@
                 Didarul Alam <span class="hm2-m-hero-text-style">Rahat</span>
                 <br />
                 <span style="font-style: italic; color: #eee; font-size: 1rem">
-                  I’m Rahat — a Full Stack Web, Flutter, and Web3 Developer with
-                  experience in AWS and DevOps.
+                  Full Stack Web Developer (Laravel, Vue.js, Nuxt.js) & Mobile
+                  App Developer (Flutter for Android/iOS)
                 </span>
               </h1>
               <h2 class="text-capitalize white-text mb-45">
-                I build AI-powered Flutter and Web Apps — from Architecture to
-                Deployment.<br />
+                I build modern websites, web apps, and cross-platform mobile
+                apps for remote clients and startups.<br />
                 <span class="d-text d-block d-sm-inline-block">
                   <span
                     id="main"
                     class="typer primary-color d-inline-block pl-2"
-                    data-words="Remote full stack developer, Hire Flutter app developer, Nuxt.js + Laravel full stack developer, Freelance AI integration developer"
+                    data-words="Full stack web developer, Hire Laravel + Nuxt.js developer, Flutter mobile app developer, Remote freelance developer"
                     data-delay="50"
                     data-colors="#25262f"
                   />
