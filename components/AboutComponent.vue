@@ -27,7 +27,7 @@
                       <img
                         class="border-radius10 position-relative z-index11"
                         loading="lazy"
-                        src="/images/about/rahat-flutter-developer.webp"
+                        src="/images/about/rahat-full-stack-laravel-web-developer-flutter-mobile-app-developer.webp"
                         alt="Didarul Alam Rahat"
                         style="display: block; max-width: 100%; height: auto"
                       />

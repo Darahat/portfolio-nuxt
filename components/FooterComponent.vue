@@ -23,6 +23,18 @@
                     >
                     © 2024
                   </p>
+                  <p
+                    class="mb-0"
+                    style="
+                      margin-top: 6px;
+                      font-size: 1rem;
+                      color: #00bfae;
+                      font-weight: 500;
+                    "
+                  >
+                    Hire the Best Full Stack Laravel & Flutter Mobile App
+                    Developer for your next project.
+                  </p>
                 </div>
               </div>
             </div>

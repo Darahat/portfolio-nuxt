@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Preloader -->
-    <div v-show="loading" id="preloader">
+    <div v-show="loading" id="preloader" aria-label="Loading content">
       <div id="loading">
         <div id="loading-center">
           <div id="loading-center-absolute">
@@ -14,6 +14,7 @@
     </div>
 
     <HeaderComponent />
+
     <main id="main-content" role="main" class="over-hiddenn">
       <HeroComponent />
       <IntroFeature />
@@ -30,6 +31,7 @@
       <ContactComponent />
       <BlogComponent />
     </main>
+
     <FooterComponent />
     <BackToTop />
   </div>
@@ -43,78 +45,206 @@ import { useScripts } from "~/composables/useScripts";
 const loading = ref(true);
 const { initializePlugins } = useScripts();
 
-// SEO metadata and structured data
+// SEO Metadata and Structured Data
 useHead({
-  title: "Full Stack Web & Flutter Developer | Rahat",
+  title:
+    "Full Stack Web & Flutter Developer | Didarul Alam Rahat | Laravel, Nuxt.js & AWS Expert",
+  htmlAttrs: { lang: "en" },
   meta: [
     {
       name: "description",
       content:
-        "Rahat — Full Stack Web & Flutter Developer skilled in Nuxt.js, Laravel, AWS, and DevOps. Available for remote projects and freelance work.",
+        "Hire Didarul Alam Rahat — a professional Full Stack Web & Flutter Developer specializing in Laravel, Nuxt.js, AWS, and scalable cloud architecture. Expert in modern web development, DevOps, and cross-platform mobile app design.",
     },
     {
+      name: "keywords",
+      content:
+        "Full Stack Developer, Flutter Developer, Laravel Developer, Nuxt.js Developer, Vue.js, AWS, DevOps, Web Developer, Mobile App Developer, Freelance Developer, Remote Developer, Software Engineer, Web3 Developer",
+    },
+    { name: "author", content: "Didarul Alam Rahat" },
+    { name: "robots", content: "index, follow" },
+    { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+    { name: "theme-color", content: "#0d1117" },
+
+    // Open Graph
+    {
       property: "og:title",
-      content: "Full Stack Web & Flutter Developer | Rahat",
+      content: "Full Stack Web & Flutter Developer | Didarul Alam Rahat",
     },
     {
       property: "og:description",
       content:
-        "Rahat — Full Stack Web & Flutter Developer skilled in Nuxt.js, Laravel, AWS, and DevOps.",
+        "Rahat — Full Stack Web & Flutter Developer skilled in Laravel, Nuxt.js, AWS, and DevOps. Expert in scalable full-stack solutions and cross-platform app development.",
     },
     { property: "og:type", content: "website" },
+    { property: "og:site_name", content: "Darahat.dev" },
     { property: "og:url", content: "https://darahat.dev" },
     {
       property: "og:image",
-      content: "https://darahat.dev/images/rahat-flutter-developer.jpg",
+      content:
+        "https://darahat.dev/images/rahat-full-stack-laravel-web-developer-flutter-mobile-app-developer.webp",
     },
+    { property: "og:locale", content: "en_US" },
+
+    // Twitter Card
     { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:creator", content: "@darahat42" },
     {
       name: "twitter:title",
-      content: "Full Stack Web & Flutter Developer | Rahat",
+      content: "Full Stack Web & Flutter Developer | Didarul Alam Rahat",
     },
     {
       name: "twitter:description",
       content:
-        "Rahat — Full Stack Web & Flutter Developer skilled in Nuxt.js, Laravel, AWS, and DevOps.",
+        "Full Stack Developer skilled in Laravel, Nuxt.js, Flutter, AWS, and DevOps. Building modern, scalable digital products.",
     },
     {
       name: "twitter:image",
-      content: "https://darahat.dev/images/rahat-flutter-developer.jpg",
+      content:
+        "https://darahat.dev/images/rahat-full-stack-laravel-web-developer-flutter-mobile-app-developer.webp",
     },
   ],
+
+  link: [
+    { rel: "canonical", href: "https://darahat.dev" },
+    {
+      rel: "icon",
+      href: "/images/logo/darahat-favicon-full-stack-web-developer.webp",
+    },
+    { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+    {
+      rel: "preload",
+      href: "/images/rahat-full-stack-laravel-web-developer-flutter-mobile-app-developer.webp",
+      as: "image",
+    },
+  ],
+
   script: [
+    // Person Schema (Enhanced)
     {
       type: "application/ld+json",
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Person",
         name: "Didarul Alam Rahat",
+        alternateName: "Rahat",
         url: "https://darahat.dev",
-        jobTitle: "Full Stack Developer",
+        image:
+          "https://darahat.dev/images/rahat-full-stack-laravel-web-developer-flutter-mobile-app-developer.webp",
+        jobTitle: "Full Stack Developer & Flutter Expert",
+        worksFor: {
+          "@type": "Organization",
+          name: "Darahat.dev",
+        },
+        description:
+          "Full Stack Web & Flutter Developer specializing in Laravel, Nuxt.js, AWS, and scalable software engineering solutions.",
         sameAs: [
-          "https://www.linkedin.com/in/rahatdev",
-          "https://github.com/rahatdev",
-          "https://twitter.com/rahatdev",
+          "https://www.linkedin.com/in/darahat",
+          "https://github.com/Darahat",
+          "https://x.com/darahat42",
+          "https://stackoverflow.com/users/3424210/didarul-alam-rahat",
+          "https://www.fiverr.com/s/qDpL9r2",
+          "https://www.upwork.com/freelancers/~014785a34291b62df4?mp_source=share",
         ],
-        knowsAbout: ["Flutter", "Laravel", "Nuxt.js", "AWS", "DevOps", "Web3"],
+        knowsAbout: [
+          "Full Stack Development",
+          "Flutter",
+          "Laravel",
+          "Nuxt.js",
+          "AWS",
+          "DevOps",
+          "Web3",
+          "UI/UX Design",
+        ],
+      }),
+    },
+    // Website Schema
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Darahat.dev",
+        url: "https://darahat.dev",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: "https://darahat.dev/search?q={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      }),
+    },
+    // Breadcrumb Schema
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://darahat.dev",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Portfolio",
+            item: "https://darahat.dev/#portfolio",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Contact",
+            item: "https://darahat.dev/#contact",
+          },
+        ],
       }),
     },
   ],
 });
 
 onMounted(async () => {
-  // Hide preloader after mount
+  // Hide preloader after short delay
   setTimeout(() => {
     loading.value = false;
   }, 500);
 
-  // Wait for DOM to be ready
   await nextTick();
 
-  // Initialize plugins after a short delay
+  // Initialize all scripts/plugins
   setTimeout(() => {
     initializePlugins();
-    // AOS is refreshed automatically by the client plugin on route changes.
   }, 600);
 });
 </script>
+
+<style scoped>
+/* Example SEO improvement: make sure visually hidden text is accessible */
+#preloader {
+  background-color: #0d1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.object {
+  width: 20px;
+  height: 20px;
+  background-color: #00adb5;
+  margin: 10px;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+</style>

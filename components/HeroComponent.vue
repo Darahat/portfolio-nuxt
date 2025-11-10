@@ -77,6 +77,28 @@
                   Full Stack Web Developer (Laravel, Vue.js, Nuxt.js) & Mobile
                   App Developer (Flutter for Android/iOS)
                 </span>
+                <br />
+                <span
+                  style="
+                    display: block;
+                    margin-top: 8px;
+                    color: #ffd700;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                  "
+                >
+                  Best Full Stack Laravel Developer for Hire
+                </span>
+                <span
+                  style="
+                    display: block;
+                    color: #00bfae;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                  "
+                >
+                  Best Flutter Mobile App Developer for Hire
+                </span>
               </h1>
               <h2 class="text-capitalize white-text mb-45">
                 I build modern websites, web apps, and cross-platform mobile

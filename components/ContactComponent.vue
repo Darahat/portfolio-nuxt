@@ -9,6 +9,25 @@
                 >Contact Me</span
               >
               <h2>Let's Get In Touch</h2>
+              <div
+                style="
+                  margin-top: 12px;
+                  font-size: 1.05rem;
+                  color: #00bfae;
+                  font-weight: 500;
+                "
+              >
+                <span
+                  >Available for hire as the
+                  <strong>Best Full Stack Laravel Developer</strong> and
+                  <strong>Best Flutter Mobile App Developer</strong>.
+                  <a
+                    href="mailto:darahat42@gmail.com"
+                    style="color: #0077b5; text-decoration: underline"
+                    >Contact now for your project!</a
+                  ></span
+                >
+              </div>
             </div>
           </div>
         </div>
