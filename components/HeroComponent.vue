@@ -165,7 +165,6 @@
 
 <script setup>
 import { useHead } from "#imports";
-import { onMounted } from "vue";
 
 useHead({
   script: [
@@ -188,40 +187,8 @@ useHead({
   ],
 });
 
-onMounted(() => {
-  if (import.meta.client) {
-    // Initialize parallax
-    // Only enable parallax on sufficiently large viewports and when the
-    // user hasn't requested reduced motion, and device looks capable.
-    const prefersReduced =
-      window.matchMedia &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const deviceMemoryOK =
-      !("deviceMemory" in navigator) ||
-      (navigator.deviceMemory && navigator.deviceMemory >= 2);
-    if (!prefersReduced && window.innerWidth > 991 && deviceMemoryOK) {
-      initParallax();
-    }
-    // Initialize typer
-    initTyper();
-  }
-});
-
-const initParallax = () => {
-  // Parallax.js initialization
-  const scene = document.getElementById("scene");
-  if (scene && window.Parallax) {
-    new window.Parallax(scene);
-  }
-};
-
-const initTyper = () => {
-  // Typer.js initialization
-  const typer = document.querySelector(".typer");
-  if (typer && window.typer) {
-    // Initialize typer animation
-  }
-};
+// Heavy script initialization (parallax, typer, vanilla-tilt) is now handled
+// by the defer-heavy-scripts.client.ts plugin to reduce forced reflows
 </script>
 
 <style scoped>

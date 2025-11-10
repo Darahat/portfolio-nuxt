@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 
 export default defineNuxtPlugin((nuxtApp) => {
   // only run on client
-  if (process.client) {
+  if (import.meta.client) {
     const init = () => {
       try {
         AOS.init({
@@ -11,6 +11,11 @@ export default defineNuxtPlugin((nuxtApp) => {
           easing: "ease",
           once: true,
           offset: 120,
+          startEvent: "DOMContentLoaded",
+          initClassName: "aos-init",
+          animatedClassName: "aos-animate",
+          useClassNames: false,
+          disableMutationObserver: false,
         });
         // mark that the Nuxt plugin initialized AOS so other code can avoid re-initializing
         try {
@@ -24,18 +29,17 @@ export default defineNuxtPlugin((nuxtApp) => {
       }
     };
 
-    // Init as soon as DOM is ready
-    if (
-      document.readyState === "complete" ||
-      document.readyState === "interactive"
-    ) {
-      setTimeout(init, 50);
-    } else {
-      document.addEventListener("DOMContentLoaded", () => setTimeout(init, 50));
-    }
-
-    // Also init on full load (images etc.)
-    window.addEventListener("load", () => setTimeout(init, 50));
+    // Wait for Vue hydration to complete before initializing AOS
+    // This prevents hydration mismatch warnings
+    nuxtApp.hook("app:mounted", () => {
+      // Use requestIdleCallback to reduce forced reflows
+      // AOS reads layout properties (offsetHeight, offsetTop) which can cause reflows
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(() => init(), { timeout: 1000 });
+      } else {
+        setTimeout(init, 150);
+      }
+    });
 
     // Refresh AOS after each route change (useful for client-only elements)
     try {

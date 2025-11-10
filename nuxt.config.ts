@@ -4,7 +4,11 @@ export default defineNuxtConfig({
   ssr: true,
   components: ["~/components"],
 
-  plugins: ["~/plugins/seo-schema.ts", "~/plugins/aos.client.ts"],
+  plugins: [
+    "~/plugins/seo-schema.ts",
+    "~/plugins/aos.client.ts",
+    "~/plugins/defer-heavy-scripts.client.ts",
+  ],
 
   css: [
     "~/assets/css/bootstrap.min.css", // Bootstrap grid system (CSS-only, no JS)
