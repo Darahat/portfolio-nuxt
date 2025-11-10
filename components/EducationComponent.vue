@@ -11,7 +11,7 @@
               <h2 class="mb-25">My Education</h2>
               <p>
                 I am B.Sc in Software engineering graduate. I completed my
-                Graduation year of 2017. It was a best part of my life.
+                Graduation year of 2017. It was the best part of my life.
               </p>
             </div>
           </div>
