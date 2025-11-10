@@ -74,7 +74,7 @@ useHead({
     {
       property: "og:description",
       content:
-        "Rahat — Full Stack Web & Flutter Developer skilled in Laravel, Nuxt.js, AWS, and DevOps. Expert in scalable full-stack solutions and cross-platform app development.",
+        "Full Stack Web Developer (Laravel, Vue.js, Nuxt.js) and Mobile App Developer (Flutter for Android/iOS), with experience in AWS, DevOps, and Web3. Expert in scalable full-stack solutions and cross-platform app development.",
     },
     { property: "og:type", content: "website" },
     { property: "og:site_name", content: "Darahat.dev" },
@@ -96,7 +96,7 @@ useHead({
     {
       name: "twitter:description",
       content:
-        "Full Stack Developer skilled in Laravel, Nuxt.js, Flutter, AWS, and DevOps. Building modern, scalable digital products.",
+        "Full Stack Web Developer (Laravel, Vue.js, Nuxt.js) and Mobile App Developer (Flutter for Android/iOS), Skilled in AWS, and DevOps. Building modern, scalable digital products.",
     },
     {
       name: "twitter:image",
@@ -137,7 +137,7 @@ useHead({
           name: "Darahat.dev",
         },
         description:
-          "Full Stack Web & Flutter Developer specializing in Laravel, Nuxt.js, AWS, and scalable software engineering solutions.",
+          "Full Stack Web Developer (Laravel, Vue.js, Nuxt.js) and Mobile App Developer (Flutter for Android/iOS) specializing in DevOps, AWS, and scalable software engineering solutions.",
         sameAs: [
           "https://www.linkedin.com/in/darahat",
           "https://github.com/Darahat",
