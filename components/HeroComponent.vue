@@ -61,10 +61,7 @@
         <div class="row justify-content-center align-items-center h-100">
           <div class="col-12 d-flex align-items-center justify-content-center">
             <div
-              class="slider-content text-center position-relative z-index11"
-              data-aos="fade-right"
-              data-aos-duration="1100"
-              data-aos-delay="500"
+              class="slider-content text-center position-relative z-index11 fade-in-hero"
             >
               <h1 class="mb-15 white-text mt-25">
                 <span
@@ -452,6 +449,23 @@ span#main {
 
 .slider-social-link .social li:hover a {
   color: var(--main-color, #25262f);
+}
+
+/* Add fade-in animation for hero text */
+.fade-in-hero {
+  opacity: 0;
+  animation: fadeInHero 0.7s ease-in forwards;
+  animation-delay: 0.1s;
+}
+@keyframes fadeInHero {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive */
