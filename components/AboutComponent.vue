@@ -10,12 +10,7 @@
               class="col-xl-6 col-lg-6 col-md-8 offset-md-0 col-sm-10 col-10 pr-3 pr-md-4"
             >
               <div class="about-img-wrapper position-relative mb-90">
-                <div
-                  class="about-img position-relative z-index11"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-delay="50"
-                >
+                <div class="about-img position-relative z-index11">
                   <div
                     class="about-img-over pl-50 transition5 d-inline-block position-relative"
                   >
@@ -32,18 +27,8 @@
                         style="display: block; max-width: 100%; height: auto"
                       />
                     </div>
-                    <div
-                      class="about-shape1 position-absolute"
-                      data-aos="fade-right"
-                      data-aos-duration="1000"
-                      data-aos-delay="400"
-                    />
-                    <div
-                      class="about-shape2 position-absolute z-index11"
-                      data-aos="fade-right"
-                      data-aos-duration="1000"
-                      data-aos-delay="400"
-                    />
+                    <div class="about-shape1 position-absolute" />
+                    <div class="about-shape2 position-absolute z-index11" />
                     <div
                       class="about-download-wrapper position-absolute z-index11"
                     >
